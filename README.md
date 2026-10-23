@@ -7,7 +7,7 @@ Cyberpunk 2077 風格的個人晨間儀表板：內湖／基隆天氣、國際�
 | 項目 | 來源 | 何時更新 |
 |---|---|---|
 | 天氣、穿著建議 | Open-Meteo（免費、免金鑰） | 每次打開網頁即時抓 |
-| 每日鳥類（照片、叫聲、介紹） | Wikimedia Commons、維基百科 | 每天換一隻，打開網頁即時抓 |
+| 每日鳥類（照片、叫聲、介紹） | Wikimedia Commons、xeno-canto、維基百科 | 每天換一隻，打開網頁即時抓 |
 | 新聞 15 則 | Google News + Gemini 挑選與摘要 | ① 每天 05:30 GitHub 自動排程（所有裝置都看得到）② 按「立即更新」重新讀取最新資料；該裝置有存 Gemini 金鑰時，會再即時抓一次新聞 |
 
 ## 安裝步驟
@@ -54,7 +54,7 @@ requirements.txt              腳本的 Python 套件
 
 ## 自訂
 - 天氣地點：`index.html` 的 `PLACES`
-- 鳥類清單：`index.html` 的 `BIRDS`（每天依序輪替一隻）
+- 鳥類清單：`index.html` 的 `BIRDS`（每天依序輪替一隻；每隻都附一段已確認可直接播放的 xeno-canto 錄音，新增鳥種時記得一起附上）
 - 新聞來源與挑選原則：`scripts/update.py` 的 `FEEDS`、`PROMPT`；網頁內即時更新的原則在 `index.html` 的 `PROMPT`
 - 排程時間：`.github/workflows/update.yml` 的 `cron`（UTC 時間，`30 21 * * *` = 台灣 05:30）
 - 指定 Gemini 模型：Settings → Secrets and variables → Actions → **Variables** 新增 `GEMINI_MODEL`；網頁則在 ⚙ 填寫

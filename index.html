@@ -188,6 +188,8 @@ main {
 .bird-sci { font: 12.5px var(--mono); color: var(--dim); font-style: italic; }
 .bird-desc { font-size: 14px; color: #c9c6b8; margin: 10px 0 14px; }
 .bird .btn { width: 100%; }
+.bird-rec { margin: 8px 0 0; font: 10.5px var(--mono); color: var(--dim); }
+.bird-rec a { text-decoration: none; }
 
 .foot { grid-column: 1 / -1; font: 11px var(--mono); color: var(--dim); text-align: center; letter-spacing: .08em; }
 
@@ -257,7 +259,7 @@ dialog .row { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wra
     <div id="birdBox"><p class="empty">讀取中…</p></div>
   </section>
 
-  <p class="foot">WEATHER // OPEN-METEO · NEWS // GOOGLE NEWS + GEMINI · BIRD // WIKIMEDIA</p>
+  <p class="foot">WEATHER // OPEN-METEO · NEWS // GOOGLE NEWS + GEMINI · BIRD // WIKIMEDIA + XENO-CANTO</p>
 </main>
 
 <dialog id="settings">
@@ -285,17 +287,38 @@ const PLACES = [
   { city: "基隆", name: "中正區", lat: 25.1516, lon: 121.7643 },
 ];
 const TABS = [["intl", "國際", "WORLD"], ["tw", "國內", "TAIWAN"], ["kl", "基隆市府", "KEELUNG"]];
+// [中文名, 學名, xeno-canto 編號, 錄音檔, 錄音者 · 授權] — one bird per day, recordings pre-checked to play inline
 const BIRDS = [
-  ["五色鳥", "Psilopogon nuchalis"], ["黃山雀", "Machlolophus holsti"], ["綠繡眼", "Zosterops simplex"],
-  ["翠鳥", "Alcedo atthis"], ["紅胸啄花鳥", "Dicaeum ignipectus"], ["紅嘴相思鳥", "Leiothrix lutea"],
-  ["火冠戴菊鳥", "Regulus goodfellowi"], ["栗背林鴝", "Tarsiger johnstoniae"], ["叉尾太陽鳥", "Aethopyga christinae"],
-  ["粉紅鸚嘴", "Sinosuthora webbiana"], ["白腰文鳥", "Lonchura striata"], ["黃腹琉璃", "Niltava vivida"],
-  ["冠羽畫眉", "Yuhina brunneiceps"], ["紅頭山雀", "Aegithalos concinnus"], ["青背山雀", "Parus monticolus"],
-  ["黃胸藪眉", "Liocichla steerii"], ["煤山雀", "Periparus ater"], ["斑文鳥", "Lonchura punctulata"],
-  ["麻雀", "Passer montanus"], ["黃尾鴝", "Phoenicurus auroreus"], ["黃眉黃鶲", "Ficedula narcissina"],
-  ["鉛色水鶇", "Phoenicurus fuliginosus"], ["赤腹山雀", "Sittiparus castaneoventris"], ["酒紅朱雀", "Carpodacus formosanus"],
-  ["北長尾山雀", "Aegithalos caudatus"], ["歐亞鴝", "Erithacus rubecula"], ["藍山雀", "Cyanistes caeruleus"],
-  ["黃雀", "Spinus spinus"], ["白頭翁", "Pycnonotus sinensis"], ["戴菊鳥", "Regulus regulus"],
+  ["五色鳥", "Psilopogon nuchalis", "472150", "https://xeno-canto.org/sounds/uploaded/QTOMNKDZMI/XC472150-20180831%200606_%E8%8A%B1%E8%93%AE%E4%B8%89%E6%B0%91%E4%BA%94%E8%89%B2%E9%B3%A5.mp3", "Blackie_Wen · CC BY-NC-SA 4.0"],
+  ["黃山雀", "Machlolophus holsti", "34264", "https://xeno-canto.org/sounds/uploaded/YTUXOCTUEM/TITYellow_FL%20DasyeushanForRes%201900m24Apr09.mp3", "Frank Lambert · CC BY-NC-ND 4.0"],
+  ["綠繡眼", "Zosterops simplex", "992545", "https://xeno-canto.org/sounds/uploaded/GZUBDKWLGI/XC992545-swinhoe-s-white-eye.mp3", "Feather V · CC BY-NC-SA 4.0"],
+  ["翠鳥", "Alcedo atthis", "591060", "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC591060-JAREK-MATUSIAK-A-797%20%286%29%20zimorodek%20%282%29.mp3", "Jarek Matusiak · CC BY-NC-SA 4.0"],
+  ["紅胸啄花鳥", "Dicaeum ignipectus", "616801", "https://xeno-canto.org/sounds/uploaded/RGSEIIJGHA/XC616801-FirebreastedFlowerpecker_PhouSamSoum_210118_1570_edited.mp3", "Bram Piot · CC BY-NC-SA 4.0"],
+  ["紅腹灰雀", "Pyrrhula pyrrhula", "1168308", "https://xeno-canto.org/sounds/uploaded/SDPCHKOHRH/XC1168308-2026-05-27-06h55-66.2117,-29.2120-Kuusamo---Konttainen-Bouvreuil-pivoine-ssp=pyrhula-chant-A.mp3", "Stanislas Wroza · CC BY-NC-SA 4.0"],
+  ["火冠戴菊鳥", "Regulus goodfellowi", "1039640", "https://xeno-canto.org/sounds/uploaded/HEYJSRUDZZ/XC1039640-250421_0425_Flamecrest.mp3", "Lars Lachmann · CC BY-NC-SA 4.0"],
+  ["栗背林鴝", "Tarsiger johnstoniae", "1039786", "https://xeno-canto.org/sounds/uploaded/HEYJSRUDZZ/XC1039786-250424_0610_Collared-Bush-Robin_song.mp3", "Lars Lachmann · CC BY-NC-SA 4.0"],
+  ["叉尾太陽鳥", "Aethopyga christinae", "992536", "https://xeno-canto.org/sounds/uploaded/GZUBDKWLGI/XC992536-ftsunbird.mp3", "Feather V · CC BY-NC-SA 4.0"],
+  ["粉紅鸚嘴", "Sinosuthora webbiana", "992708", "https://xeno-canto.org/sounds/uploaded/GZUBDKWLGI/XC992708-vinous.mp3", "Feather V · CC BY-NC-SA 4.0"],
+  ["白腰文鳥", "Lonchura striata", "778724", "https://xeno-canto.org/sounds/uploaded/DUCDAEXBSP/XC778724-10月26日-上午11点34分白腰文鸟_01.mp3", "Tiantian Zhao 赵天天 · CC BY-NC-SA 4.0"],
+  ["黃腹琉璃", "Niltava vivida", "1036638", "https://xeno-canto.org/sounds/uploaded/HEYJSRUDZZ/XC1036638-250421_0460_Taiwan-Vivid-Niltava_song.mp3", "Lars Lachmann · CC BY-NC-SA 4.0"],
+  ["冠羽畫眉", "Yuhina brunneiceps", "412914", "https://xeno-canto.org/sounds/uploaded/AAQRPNOMFM/XC412914-taiwan%20yuhina29-03-0615.mp3", "Somkiat Pakapinyo (Chai) · CC BY-NC-SA 4.0"],
+  ["紅頭山雀", "Aegithalos concinnus", "1138394", "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC1138394-Aegithalos-concinnus-260501_002%2C-2.05.2026%2C-%D0%9A%D1%82%D0%B0%D0%B9%2C-%D0%BF.1%2C-04-50%2CA-song.mp3", "Albert Lastukhin · CC BY-NC-ND 4.0"],
+  ["青背山雀", "Parus monticolus", "769929", "https://xeno-canto.org/sounds/uploaded/KQMHASAYBL/XC769929-song-%E6%A5%9A%E9%9B%84%E7%B4%AB%E6%BA%AA%E5%B1%B1.mp3", "Dave Guo · CC BY-NC-SA 4.0"],
+  ["黃胸藪眉", "Liocichla steerii", "1039780", "https://xeno-canto.org/sounds/uploaded/HEYJSRUDZZ/XC1039780-250421_0443_Taiwan-Liocichla_song.mp3", "Lars Lachmann · CC BY-NC-SA 4.0"],
+  ["煤山雀", "Periparus ater", "1105957", "https://xeno-canto.org/sounds/uploaded/MBMJEFAYPZ/XC1105957-Svartmes-sång2-Degerfors-20260506.mp3", "Petter Westberg · CC BY-NC-SA 4.0"],
+  ["斑文鳥", "Lonchura punctulata", "862882", "https://xeno-canto.org/sounds/uploaded/NXHTMHMNSS/XC862882-Scaly-breasted-Munia-20230107-CC-e-ebird-xeno.mp3", "Lim Ying Hien · CC BY-NC-ND 4.0"],
+  ["麻雀", "Passer montanus", "1139418", "https://xeno-canto.org/sounds/uploaded/WSTMKZEHKY/XC1139418-260527-054530-Feldsperling-A.mp3", "Walter Wallner · CC BY-NC-SA 4.0"],
+  ["黃尾鴝", "Phoenicurus auroreus", "1107832", "https://xeno-canto.org/sounds/uploaded/HYVFFXDPFG/XC1107832-260508_0918%E5%A6%99%E5%B3%B0%E5%B1%B1%E5%8C%97%E7%BA%A2%E5%B0%BE%E9%B8%B2%26%E8%BF%9C%E4%B8%9C%E6%A0%91%E8%8E%BA.mp3", "Zhen niu · CC BY-NC-SA 4.0"],
+  ["黃眉黃鶲", "Ficedula narcissina", "299418", "https://xeno-canto.org/sounds/uploaded/TNTQAOFHFM/XC299418-Narcissus%20Flycatcher%207%20Mt%20Fuji.mp3", "Brendan Sloan · CC BY-NC-SA 4.0"],
+  ["鉛色水鶇", "Phoenicurus fuliginosus", "843581", "https://xeno-canto.org/sounds/uploaded/YNOAMCSSHX/XC843581-Plumbeous-Water-Redstart%E7%BA%A2%E5%B0%BE%E6%B0%B4%E9%B8%B2-song-%E5%94%90%E5%AE%B6%E6%B2%B3201107_0717---A-.mp3", "Bo Shunqi 薄顺奇 · CC BY-NC-SA 4.0"],
+  ["赤腹山雀", "Sittiparus castaneoventris", "791116", "https://xeno-canto.org/sounds/uploaded/KJIUMYQVMO/XC791116-159-031_15-adjust.mp3", "Jerome Chie-Jen Ko · CC BY-NC-SA 4.0"],
+  ["酒紅朱雀", "Carpodacus formosanus", "1153298", "https://xeno-canto.org/sounds/uploaded/OYCVWWLWLG/XC1153298-20260702-0644-南雙頭山東峰-B-臺灣朱雀雄鳥.mp3", "Sheng-wun Jheng · CC BY-NC-SA 4.0"],
+  ["北長尾山雀", "Aegithalos caudatus", "951570", "https://xeno-canto.org/sounds/uploaded/ZNCDXTUOFL/XC951570-JAREK-MATUSIAK-A-2237-%282%29-raniuszki-ed.mp3", "Jarek Matusiak · CC BY-NC-ND 4.0"],
+  ["歐亞鴝", "Erithacus rubecula", "1181903", "https://xeno-canto.org/sounds/uploaded/YEUMVPMDCG/XC1181903-043_Rougegorge_57dB.mp3", "Clément Bruneau · CC BY-NC-SA 4.0"],
+  ["藍山雀", "Cyanistes caeruleus", "1152240", "https://xeno-canto.org/sounds/uploaded/SPMWIWZKKC/XC1152240-250504_0996_EUBT.mp3", "Sunny Tseng · CC BY-NC-SA 4.0"],
+  ["黃雀", "Spinus spinus", "793450", "https://xeno-canto.org/sounds/uploaded/MMEJYLOPDO/XC793450-Gr%C3%B6nsiska_36.mp3", "Lars Edenius · CC BY-NC-SA 4.0"],
+  ["白頭翁", "Pycnonotus sinensis", "1138600", "https://xeno-canto.org/sounds/uploaded/LELYWQKUZX/XC1138600-Pycnonotus-sinensis-2.05.2026%2C-%D0%9A%D1%82%D0%B0%D0%B9%2C-%D0%BF.1%2C07-05%2C-A.mp3", "Albert Lastukhin · CC BY-NC-ND 4.0"],
+  ["戴菊鳥", "Regulus regulus", "1187715", "https://xeno-canto.org/sounds/uploaded/QSIPMNXSKA/XC1187715-201026-151557_chant.mp3", "Adrien Peillon · CC BY-NC-SA 4.0"],
 ];
 
 /* ---------- helpers ---------- */
@@ -449,7 +472,7 @@ async function loadData() {
   renderNews();
 }
 
-/* ---------- bird of the day (Wikimedia + Wikipedia, cached per day) ---------- */
+/* ---------- bird of the day (photo: Wikimedia, text: Wikipedia, call: xeno-canto) ---------- */
 async function commons(search, prop, extra) {
   const p = new URLSearchParams({ action: "query", format: "json", origin: "*", generator: "search", gsrsearch: search,
     gsrnamespace: 6, gsrlimit: 10, prop, ...extra });
@@ -458,38 +481,34 @@ async function commons(search, prop, extra) {
 }
 const credit = m => `${plain(m?.Artist?.value) || "Unknown"} · ${m?.LicenseShortName?.value || ""}`;
 async function loadBird() {
-  const d = today();
+  const d = today(), [zh, sci, xc, audio, rec] = BIRDS[Math.floor(Date.parse(d) / 864e5) % BIRDS.length];
   let b = LS.json("bird");
-  if (b?.date !== d) {
-    const [zh, sci] = BIRDS[Math.floor(Date.parse(d) / 864e5) % BIRDS.length];
-    b = { date: d, zh, sci, xc: `https://xeno-canto.org/explore?query=${encodeURIComponent(sci)}` };
-    const [img, snd, wiki] = await Promise.allSettled([
+  if (b?.date !== d || b.zh !== zh) {
+    b = { date: d, zh, sci };
+    const [img, wiki] = await Promise.allSettled([
       commons(`"${sci}" filetype:bitmap`, "imageinfo", { iiprop: "url|extmetadata|mime", iiurlwidth: 900 }),
-      commons(`"${sci}" filetype:audio`, "videoinfo", { viprop: "derivatives|extmetadata" }),
       getJSON(`https://zh.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(zh)}`, { headers: { "Accept-Language": "zh-TW" } }),
     ]);
     const ii = img.value?.map(p => p.imageinfo?.[0]).find(i => i?.mime === "image/jpeg" && i.thumburl);
     if (ii) Object.assign(b, { photo: ii.thumburl, photoPage: ii.descriptionurl, credit: credit(ii.extmetadata) });
-    const vi = snd.value?.filter(p => p.title.toLowerCase().includes(sci.toLowerCase())).map(p => p.videoinfo?.[0])
-      .find(v => v?.derivatives?.some(x => x.type === "audio/mpeg"));
-    if (vi) Object.assign(b, { audio: vi.derivatives.find(x => x.type === "audio/mpeg").src, audioCredit: credit(vi.extmetadata) });
     b.desc = wiki.value?.extract || "";
     if (b.photo) LS.set("bird", JSON.stringify(b)); // only cache complete lookups
   }
   state.bird = b;
-  const audio = b.audio && new Audio(b.audio);
-  const play = h("button", { className: "btn", type: "button" }, "▶ 播放叫聲");
-  if (audio) {
-    play.onclick = () => audio.paused ? audio.play() : (audio.pause(), audio.currentTime = 0);
-    audio.onplay = () => play.textContent = "■ 停止叫聲";
-    audio.onpause = audio.onended = () => play.textContent = "▶ 播放叫聲";
-  }
+  const sound = new Audio(audio), play = h("button", { className: "btn", type: "button" }, "▶ 播放叫聲");
+  sound.preload = "none";
+  const fail = () => play.textContent = "⚠ 錄音暫時無法播放";
+  play.onclick = () => sound.paused ? sound.play().catch(fail) : (sound.pause(), sound.currentTime = 0);
+  sound.onplay = () => play.textContent = "■ 停止叫聲";
+  sound.onpause = sound.onended = () => play.textContent = "▶ 播放叫聲";
+  sound.onerror = fail;
   $("#birdBox").replaceChildren(
     b.photo && h("figure", { className: "bird-fig" }, h("img", { src: b.photo, alt: `${b.zh}的照片`, loading: "lazy" }),
       h("figcaption", {}, h("a", { href: b.photoPage, target: "_blank", rel: "noopener" }, `📷 ${b.credit}`))),
     h("div", { className: "bird-name" }, b.zh), h("div", { className: "bird-sci" }, b.sci),
     b.desc && h("p", { className: "bird-desc" }, b.desc),
-    audio ? play : h("a", { className: "btn", href: b.xc, target: "_blank", rel: "noopener" }, "↗ 到 xeno-canto 聽叫聲"));
+    play,
+    h("p", { className: "bird-rec" }, "🎙 ", h("a", { href: `https://xeno-canto.org/${xc}`, target: "_blank", rel: "noopener" }, `XC${xc} · ${rec} · xeno-canto`)));
 }
 
 /* ---------- spoken briefing ---------- */
