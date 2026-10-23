@@ -76,11 +76,12 @@ button { font: inherit; color: inherit; }
 main {
   max-width: 1200px; margin: 0 auto; padding: 18px 14px calc(40px + env(safe-area-inset-bottom));
   display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr);
-  grid-template-areas: "brief" "wx" "cal" "news" "bird";
+  grid-template-areas: "brief" "wx" "news" "bird";
 }
 @media (min-width: 960px) {
   main { padding: 26px 24px 60px; gap: 20px; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
-    grid-template-areas: "brief cal" "wx cal" "news bird"; align-items: start; }
+    grid-template-areas: "brief bird" "wx bird" "news bird"; align-items: start; }
+  #bird { position: sticky; top: 20px; }
 }
 .panel {
   position: relative; background: linear-gradient(180deg, var(--raised), var(--panel) 70%);
@@ -174,15 +175,6 @@ main {
 .nm { font: 11.5px var(--mono); color: var(--cyan); margin-top: 5px; letter-spacing: .06em; }
 .empty { padding: 14px 0; color: var(--dim); font-size: 14px; }
 
-/* ---------- calendar ---------- */
-#cal { grid-area: cal; }
-.ev { display: grid; grid-template-columns: 56px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid rgba(255,255,255,.07); }
-.ev:first-child { border-top: 0; }
-.ev time { font: 700 17px var(--tech); color: var(--cyan); font-variant-numeric: tabular-nums; }
-.ev .et { font-weight: 500; }
-.ev .ec { font: 11px var(--mono); color: var(--dim); letter-spacing: .06em; }
-.cal-free { padding: 14px; color: var(--cyan); box-shadow: inset 0 0 0 1px rgba(0,240,255,.35); font-size: 14px; }
-
 /* ---------- bird ---------- */
 #bird { grid-area: bird; }
 .bird-fig { position: relative; margin: 0 0 12px; aspect-ratio: 16/10; background: #000; overflow: hidden; }
@@ -254,11 +246,6 @@ dialog .row { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wra
     <p class="advice" id="advice" hidden></p>
   </section>
 
-  <section class="panel" id="cal">
-    <h2 class="ph"><b>今日行程</b><i>AGENDA</i></h2>
-    <div id="calBox"><p class="empty">讀取中…</p></div>
-  </section>
-
   <section class="panel" id="news">
     <h2 class="ph"><b>新聞</b><i>NEWSFEED</i><span class="tail" id="newsTime"></span></h2>
     <div class="tabs" role="tablist" id="tabs"></div>
@@ -282,10 +269,6 @@ dialog .row { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wra
     </label>
     <label>Gemini 模型（選填）
       <input id="fModel" autocomplete="off" spellcheck="false" placeholder="gemini-2.5-flash">
-    </label>
-    <label>行事曆密語
-      <input id="fCal" type="password" autocomplete="off" placeholder="與 GitHub Secret CAL_KEY 相同">
-      <span>用來解鎖加密的行事曆；未設定行事曆同步可留空。</span>
     </label>
     <p class="msg" id="setMsg"></p>
     <div class="row">
@@ -337,12 +320,12 @@ async function getJSON(url, opt) {
   if (!r.ok) throw Error(`HTTP ${r.status}`);
   return r.json();
 }
-const state = { wx: null, advice: "", news: LS.json("news"), cal: null, events: null, bird: null };
+const state = { wx: null, advice: "", news: LS.json("news"), bird: null };
 
 function setStatus(s, text) { $("#status").dataset.s = s; $("#statusText").textContent = text; }
 function showFreshness() {
   const n = state.news;
-  if (!n) return setStatus("stale", "尚無新聞資料 · 貼上 Gemini 金鑰後按「立即更新」");
+  if (!n) return setStatus("stale", "尚無新聞資料 · 等待每日排程更新");
   const src = n.source === "browser" ? "本機 GEMINI" : n.ai ? "雲端排程 · GEMINI" : "雲端排程";
   const fresh = n.date === today();
   setStatus(fresh ? "ok" : "stale", `${fresh ? "SYNCED" : "STALE"} // ${mmdd(n.updatedAt)} ${hhmm(n.updatedAt)} · ${src}`);
@@ -436,7 +419,7 @@ const newsLink = n => /^https?:\/\//.test(n.url || "") ? n.url
 
 async function refreshNews() {
   const key = LS.get("gemini_key");
-  if (!key) return openSettings("請先貼上 Gemini API Key，才能在這台裝置直接更新新聞。");
+  if (!key) return;
   $("#refreshBtn").disabled = true;
   setStatus("busy", "GEMINI // 搜尋並整理今日新聞，約需 20–40 秒…");
   try {
@@ -454,39 +437,16 @@ async function refreshNews() {
   }
 }
 
-/* ---------- data.json from the daily GitHub Action (news + encrypted calendar) ---------- */
+/* ---------- data.json from the daily GitHub Action ---------- */
 async function loadData() {
   try {
     const d = await getJSON(`data.json?t=${Date.now()}`);
-    state.cal = d.calendar || null;
     if (d.news && (!state.news || Date.parse(d.updatedAt) > Date.parse(state.news.updatedAt))) {
       state.news = { date: d.date, updatedAt: d.updatedAt, ai: d.ai, source: "action", news: d.news };
       LS.set("news", JSON.stringify(state.news));
     }
   } catch { /* opened without data.json (e.g. local file) — keep cached news */ }
   renderNews();
-  renderCal();
-}
-
-/* ---------- calendar (AES-GCM, decrypted locally) ---------- */
-async function decrypt(enc, pass) {
-  const b = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
-  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"]);
-  const key = await crypto.subtle.deriveKey({ name: "PBKDF2", salt: b(enc.salt), iterations: enc.iter, hash: "SHA-256" },
-    base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
-  return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({ name: "AES-GCM", iv: b(enc.iv) }, key, b(enc.data))));
-}
-async function renderCal() {
-  const box = $("#calBox"), pass = LS.get("cal_pass");
-  state.events = null;
-  if (!state.cal) return box.replaceChildren(h("p", { className: "empty" }, "行事曆同步尚未設定（見 README 第 4 步）。"));
-  if (!pass) return box.replaceChildren(h("button", { className: "btn ghost", type: "button", onclick: () => openSettings() }, "🔒 輸入密語解鎖行事曆"));
-  try { state.events = await decrypt(state.cal, pass); }
-  catch { return box.replaceChildren(h("p", { className: "empty" }, "密語不正確，請到 ⚙ 重新輸入。")); }
-  box.replaceChildren(...(state.events.length ? state.events.map(e => h("div", { className: "ev" },
-    h("time", {}, e.time),
-    h("div", {}, h("div", { className: "et" }, e.title), h("div", { className: "ec" }, [e.loc, e.cal].filter(Boolean).join(" · ")))))
-    : [h("p", { className: "cal-free" }, "今天沒有排定的行程，可以彈性運用這一天。")]));
 }
 
 /* ---------- bird of the day (Wikimedia + Wikipedia, cached per day) ---------- */
@@ -538,7 +498,6 @@ function briefing() {
   const t = [`早安，今天是${date}。`];
   for (const w of state.wx || []) t.push(`${w.city}${w.name}目前${w.temp}度，今天${w.lo}到${w.hi}度，${wmo(w.code)}，降雨機率百分之${w.rain}。`);
   if (state.advice) t.push(state.advice);
-  if (state.events) t.push(state.events.length ? `今天有${state.events.length}項行程：${state.events.map(e => `${e.time}，${e.title}`).join("；")}。` : "今天行事曆沒有排定行程。");
   for (const [k, zh] of TABS) {
     const n = state.news?.news?.[k];
     if (n?.length) t.push(`${zh}新聞：${n.slice(0, 3).map(x => x.title).join("；")}。`);
@@ -564,7 +523,6 @@ function togglePlay() {
 function openSettings(msg = "") {
   $("#fKey").value = LS.get("gemini_key") || "";
   $("#fModel").value = LS.get("gemini_model") || "";
-  $("#fCal").value = LS.get("cal_pass") || "";
   $("#setMsg").textContent = msg;
   $("#settings").showModal();
 }
@@ -573,8 +531,6 @@ $("#settings").addEventListener("close", () => {
   const hadKey = !!LS.get("gemini_key");
   LS.set("gemini_key", $("#fKey").value.trim());
   LS.set("gemini_model", $("#fModel").value.trim());
-  LS.set("cal_pass", $("#fCal").value);
-  renderCal();
   if (!hadKey && LS.get("gemini_key") && state.news?.date !== today()) refreshNews();
   else showFreshness();
 });
@@ -582,7 +538,10 @@ $("#settings").addEventListener("close", () => {
 /* ---------- boot ---------- */
 $("#playBtn").onclick = togglePlay;
 $("#setBtn").onclick = () => openSettings();
-$("#refreshBtn").onclick = () => Promise.allSettled([loadWeather(), loadBird()]).then(refreshNews);
+$("#refreshBtn").onclick = async () => {
+  await Promise.allSettled([loadWeather(), loadBird(), loadData()]);
+  if (LS.get("gemini_key")) refreshNews();
+};
 function tick() {
   const n = new Date();
   $("#clock").textContent = n.toLocaleTimeString("zh-TW", { timeZone: "Asia/Taipei", hour12: false });

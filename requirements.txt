@@ -1,4 +1,1 @@
 requests>=2.31
-icalendar>=5.0
-recurring-ical-events>=2.2
-cryptography>=42

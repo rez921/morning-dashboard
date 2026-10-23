@@ -1,6 +1,6 @@
 # 晨間快報 // MORNING.SYS
 
-Cyberpunk 2077 風格的個人晨間儀表板：內湖／基隆天氣、國際／國內／基隆市府新聞（各 5 則，分頁切換）、今日行程、每日鳥類與語音簡報。純靜態網頁，放在 GitHub Pages，任何裝置的瀏覽器都能開。
+Cyberpunk 2077 風格的個人晨間儀表板：內湖／基隆天氣、國際／國內／基隆市府新聞（各 5 則，分頁切換）、每日鳥類與語音簡報。純靜態網頁，放在 GitHub Pages，任何裝置的瀏覽器都能開。
 
 ## 資料怎麼更新
 
@@ -8,8 +8,7 @@ Cyberpunk 2077 風格的個人晨間儀表板：內湖／基隆天氣、國際�
 |---|---|---|
 | 天氣、穿著建議 | Open-Meteo（免費、免金鑰） | 每次打開網頁即時抓 |
 | 每日鳥類（照片、叫聲、介紹） | Wikimedia Commons、維基百科 | 每天換一隻，打開網頁即時抓 |
-| 新聞 15 則 | Google News + Gemini 挑選與摘要 | ① 每天 05:30 GitHub 自動排程 ② 網頁有存 Gemini 金鑰時，打開若不是今天的資料會自動更新 ③ 隨時按「立即更新」 |
-| 今日行程 | Google 日曆（加密後存在 data.json） | 每天 05:30 GitHub 自動排程 |
+| 新聞 15 則 | Google News + Gemini 挑選與摘要 | ① 每天 05:30 GitHub 自動排程（所有裝置都看得到）② 按「立即更新」重新讀取最新資料；該裝置有存 Gemini 金鑰時，會再即時抓一次新聞 |
 
 ## 安裝步驟
 
@@ -34,29 +33,20 @@ git push -u origin main
 1. 到 <https://aistudio.google.com/apikey> 免費產生金鑰。
 2. 儲存庫 → **Settings → Secrets and variables → Actions → New repository secret**
    - Name：`GEMINI_API_KEY`　Value：貼上金鑰
-3. 打開儀表板網頁 → 右上 **⚙** → 把同一把金鑰貼進「Gemini API Key」→ 儲存。（金鑰只存在那台裝置的瀏覽器，每台手機／電腦各貼一次。）
+3. （選用）想讓「立即更新」隨時抓最新新聞的裝置：打開儀表板 → 右上 **⚙** → 貼上同一把金鑰 → 儲存。金鑰只存在那台裝置的瀏覽器；不貼也能每天看到 05:30 更新的新聞。
 
 沒放金鑰也能用：新聞會直接列 Google News 頭條，只是沒有摘要與編輯挑選。
 
-### 4. 同步 Google 日曆（選用）
-因為網頁是公開的，行事曆會**加密**後才寫進 `data.json`，只有輸入密語的裝置看得到。
-1. Google 日曆（電腦版）→ 每個要同步的日曆 → **設定和共用** → 最下方「**iCal 格式的私密網址**」→ 複製。
-2. 新增 Secret `ICAL_URLS`：貼上所有私密網址，一行一個。
-3. 新增 Secret `CAL_KEY`：自訂一組密語（例如一句好記的話）。
-4. 儀表板 ⚙ →「行事曆密語」輸入同一組密語。
-
-> 私密網址等同日曆的鑰匙，只放在 GitHub Secrets，不要貼在其他地方。別人共用給你的日曆不會有私密網址，那類日曆無法同步。
-
-### 5. 第一次手動執行
+### 4. 第一次手動執行
 儲存庫 → **Actions** → 若有提示請先按啟用 → 左側選 **update-data** → **Run workflow**。跑完（約 1 分鐘）後 `data.json` 就是今天的資料，之後每天 05:30 自動執行。
 
-### 6. 加到手機主畫面
+### 5. 加到手機主畫面
 iPhone：Safari 開網址 → 分享 → 加入主畫面。Android：Chrome 選單 → 加到主畫面。
 
 ## 檔案
 ```
 index.html                    儀表板（HTML/CSS/JS 單一檔案）
-data.json                     每日新聞＋加密行事曆（由排程產生）
+data.json                     每日新聞（由排程產生）
 scripts/update.py             產生 data.json 的腳本
 requirements.txt              腳本的 Python 套件
 .github/workflows/update.yml  每日 05:30 排程

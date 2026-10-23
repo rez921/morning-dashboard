@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
-"""Builds data.json (news + encrypted calendar) for the morning dashboard.
+"""Builds data.json (news) for the morning dashboard.
 Runs daily on GitHub Actions; weather and bird-of-the-day load live in the page.
 
 Env (all optional — the script degrades gracefully without them):
   GEMINI_API_KEY  picks and summarises the news (without it: top RSS headlines)
   GEMINI_MODEL    override the model (default: gemini-2.5-flash, then gemini-flash-latest)
-  ICAL_URLS       Google Calendar "secret iCal" URLs, comma/newline separated
-  CAL_KEY         passphrase used to encrypt the calendar (required with ICAL_URLS)
 """
-import base64, datetime as dt, json, os, re, sys
+import datetime as dt, json, os, re, sys
 import xml.etree.ElementTree as ET
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
@@ -106,44 +104,6 @@ def pick(cands, chosen, n=5):
     return out or distinct(cands, n)
 
 
-def encrypt(text, passphrase, iters=200_000):
-    from cryptography.hazmat.primitives import hashes
-    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
-    from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-    salt, iv = os.urandom(16), os.urandom(12)
-    key = PBKDF2HMAC(hashes.SHA256(), 32, salt, iters).derive(passphrase.encode())
-    b64 = lambda b: base64.b64encode(b).decode()
-    return {"salt": b64(salt), "iv": b64(iv), "iter": iters, "data": b64(AESGCM(key).encrypt(iv, text.encode(), None))}
-
-
-def calendar():
-    urls = [u for u in re.split(r"[\s,]+", os.environ.get("ICAL_URLS", "")) if u]
-    key = os.environ.get("CAL_KEY")
-    if not urls or not key:
-        return None  # never publish an unencrypted calendar
-    import icalendar, recurring_ical_events
-    start = dt.datetime.combine(TODAY, dt.time(), TZ)
-    events = []
-    for url in urls:
-        try:
-            cal = icalendar.Calendar.from_ical(get(url).content)
-        except Exception as e:
-            log("calendar:", e)
-            continue
-        name = str(cal.get("X-WR-CALNAME", ""))
-        for ev in recurring_ical_events.of(cal).between(start, start + dt.timedelta(days=1)):
-            title, s = str(ev.get("SUMMARY", "")).strip(), ev.get("DTSTART").dt
-            if not title or str(ev.get("STATUS", "")).upper() == "CANCELLED":
-                continue
-            if isinstance(s, dt.datetime):
-                time = (s if s.tzinfo else s.replace(tzinfo=TZ)).astimezone(TZ).strftime("%H:%M")
-            else:
-                time = "全天"
-            events.append({"time": time, "title": title, "cal": name, "loc": str(ev.get("LOCATION", "") or "")})
-    events.sort(key=lambda e: (e["time"] != "全天", e["time"]))
-    return encrypt(json.dumps(events, ensure_ascii=False), key)
-
-
 def main():
     old = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
     cands = {}
@@ -161,7 +121,6 @@ def main():
         "updatedAt": NOW.isoformat(timespec="seconds"),
         "ai": bool(ai),
         "news": news,
-        "calendar": calendar(),
     }
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
