@@ -1,102 +1,102 @@
 {
  "date": "2026-10-23",
- "updatedAt": "2026-10-23T17:57:57+08:00",
- "ai": false,
+ "updatedAt": "2026-10-23T18:05:10+08:00",
+ "ai": true,
  "news": {
   "intl": [
    {
-    "title": "馬斯克能決定戰爭通訊？克魯曼籲美接管星鏈",
-    "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNS2Nfd2lzVE91MmdRRGxtbG5hVUVDZlZBMG9RV2JXU1pkdXlUMmotLWdCRHVuT2lDdmZIOE02dVRLZENONS1KX3pXZG9RRDlYWGVnQV9FaFVITk54N2FiSUplOFUxWDBKWmFybXlqY1RPNV9oRndMbTlWWl83ZVFkUjE0RFlTd2IyUzJVTkU2TnFTbXpJTW9yblU3cVhRdXdZcmVlWG5BQmZCZHVqdGRwbm0xWG9YaWJhNXlXU1BteTFPeTNaMG9tTEt4QWtfNU5jZF91eXFFLUpkMGlhZS0xdmNMbG1CN1BKSFVSd1BwSjFWeHBxVHVLS1dQVHdyUVpaLUpxWUsyaVZHNEtIeE5pTGJnNVd4MVk5d2IxQkNDRngydGpicF8tcmNxYXFSbml2ejA0b19TTUI?oc=5",
+    "title": "美軍發布第一島鏈作戰指南 應對台海潛在衝突",
+    "url": "https://news.google.com/rss/articles/CBMinANBVV95cUxPanZiNmdzTzdxQ1N2WU1qYmRDVWE3SUhTNy1uNXJVN3FMMGZrZUhYTjRmWThSc05SWjZtV25feWpmaVRwc0hMNFdPR1phQllDSTlUTENUMnh5Vkh1cTFhZlJvN0pTNlJPMHBESC1hUXE4bG1JVXVPSkQyTnN6QllZb1hXM0cxWmRwSEhvS3ZTdFMwVDhVQndxaUtxU0I1S25PSlpUQWRsWklORWlVSzV5cmxRaHlJdWJucm5BeTNlWmlfWUVuTmFfTzZNNmszeWpyQlBsSFE0bENOSC16M0hTTHFDMDh6bWNJZThJdlFLLTVVOE5FUWY0dHBCMzhhRXZPMGh5XzU4T1ppYW1jTmNpemNYOFl3LUpNeDRyenY2REg4enM4VnpoSVZKaXM2Sl8xNzg3QmN3YUU0eUozUUw1cmdYNkVyeHBSQ1IwU05SZDFCdWthb2d5UHFYRVpWYlZnVlQ0RGZSdlpZRDJybGpxeV8zWTBjMzB5ZGEyeXdPbXpHcXFwZFprTndJeTd4ZkhqazQtV3F0a1FsVnox?oc=5",
     "source": "Yahoo新聞",
-    "summary": ""
+    "summary": "美軍公布最新作戰指南《陸軍如何作戰》，鎖定第一島鏈，強調若台海發生變故，駐紮當地的美軍將在開戰首日即投入作戰。此舉顯示美國對區域安全的重視與介入決心，並將中國解放軍定義為「主要威脅」。"
    },
    {
-    "title": "金與正怒轟南韓官員！宣布北韓邊境「進入待命」",
-    "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOMkthSFNHYmdyWDBXR1AyWHh1RVFCSjF0aFRaVkFoeUtVQmFOMkhZREVvcVl0RDJOaFZhMHBLMTFZOVEzMnh6Y3dKejNZTElpR1ZDeGF1UFlzMFBKQnExSVczREEzZ3ZnS1hLVkFFek9JUUFYTmh4X2lVSWpyVXk4bFZfTmlyM1U5SmlPbHoyQ09TMVYzcjdVNkEtNXZJMFVyVWF2YlgxU1ltaTd4QnJlbkk2TGRqLWV1YWM5b084MEp3Y1ZDSGVFcDNjV2dtOHVyRlhaaGpzUzRuX3lxdFN3UUZhYWt6MEUzbFE3NnNkRkZISzNJSVpPV1I2NXA0VXE2c19Cdlpjb1QyTUpqblZ3MndITDR3MVE1RGFtOXlZWGpkMUdTSmpFaEhHcTBMckk3c3JocTBNa1VLQQ?oc=5",
-    "source": "Yahoo新聞",
-    "summary": ""
-   },
-   {
-    "title": "西藏發生7級強烈地震，據報至少16死、數十人受傷",
+    "title": "西藏發生7級強震 造成至少16死數十人受傷",
     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE43eExJX0FESFR3MW9Kal9qWWtEX0pZZFlCa3pud0pNX1Q4TzJEc21yYUc5V2ZjM19pUmY4UWtROUV4ZXVaSmswOGNzdnNKbWdPQ2pNNTJMSEw3VUhLY1dxYlhGX3YtMWfSAWxBVV95cUxONzZxYzNuS1hqWGlRbnRCNjBWWTctUmFlQVR1SUhBNEZFa1c4YURwZERSOThGcm0xT3RrNURsSTJteUhKQWNMeVdvZHpQX2NFTEpfNzJPclBTUkJ6N3pDcTlKeENhMGlkVm9KOTI?oc=5",
     "source": "BBC",
-    "summary": ""
+    "summary": "西藏那曲市巴青縣於10月22日晚間發生規模7級強烈淺源地震，震源深度僅10公里，已造成至少16人遇難、數十人受傷，並有339間房屋倒塌或受損。救援工作持續進行，但當地夜間低溫增加救援難度。"
    },
    {
-    "title": "人行道驚現「耶穌臉」！巴西小鎮掀朝聖潮 信徒跪地痛哭",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB6OU9fWGtVdFBzRk5UdERCQ1FEam1Ibi1BTmVIdW9pZjQwaVk4S3pOOF8ySmlNSmhaSDBtMnN2MkFGUlN2Q2VwSjNJcHJGenZT0gFWQVVfeXFMUE94VDA3dmVJSG1WTDZKRzZTSDc3cWFmbW4zbVNtc0V6Z2xTcnNWOVd1Rk05MlNLRUxjVXBnLS1qNlV3VWVJNjg3RERYejR6dEJ0MUM2WWc?oc=5",
-    "source": "UDN",
-    "summary": ""
+    "title": "美伊衝突恐擴大 青年運動連襲沙國美撤外交人員",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0N1gtbU9PN1JmQU1MelFNRkZTQjVwR0VUMENoUkd3bW5RS2pVRVlfN1hYdkZ5SWJYN1h5LXpSb3JFTWU5bWNQZ0NPRGo5aDVNeWdZTU5mYmxJZjBoaElGdVZ3V3luRU1McEFlRjBn?oc=5",
+    "source": "中時新聞網",
+    "summary": "中東地區緊張局勢升級，美伊戰火恐將擴大。青年運動組織持續襲擊沙烏地阿拉伯，美國已撤離部分外交人員。此情勢引發國際社會對區域衝突進一步擴大的擔憂。"
    },
    {
-    "title": "陸大使稱「動武可輕易取勝」後 北京允許菲律賓向「馬德雷山號」補給物資",
-    "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxQUnpsUzJKZFBMcUd0MFYzUHVVNWpYZk8wSlVsZWNnN3EzQ09mOTFhYWZwWGhnQ2ZlMDlQUXRaX1lGcVRzeGJZOEJsMThlQjNMZ0VrdHZEenZHbjlLY1dKUndUaTJkZXFGeFp3bzBVal9scmNnNC1WeU5QYks2MjNhZ0NzX1FZU2ZTM0hnbTB2ZzlyX0VzczRiNGE1ODFERm1DaE1vSTlyMHI1Yy0taHE4TTlyVjlxWnB0UnVxQlVISDNHZlRWcy1ZWW9EdHBQZE5aTEZBRTJqQ3JVbFhkajF6MDB1Ukl1QklDZjR0ZVdVenRlb0U3T2syakZaN3E1ejFuaTlFUnhJcEhMZGREN0h0SndGdnVGNUVSSDhmTzlVb1VFandkTXB2Vzg5YkxxNGplNmJoYUhTSGQxWXBoRlh1MmYwendvNFI5Nmkyb1c4ZTJ3VU10R2dHWlZJVmlSVTdZSUR0eG44UG53aFRwYXQwRS1ZeUlSdEdJZVhTY21GWGRmOHZr?oc=5",
+    "title": "普丁邀川習三方會談 商議俄烏戰事新密約",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Sa0lKc1VOeE1WekJOYWkyd1lMbEEybkFJNFVyeXlTNUhNNzc3OV9wWUNUVHhLdmxCSHFZaDlFYmZyRUx2VHd1YmRXb0toU0JqUW5ZR3Jyam9CSTVHWDZ1Tk1FSERqUE1IaUpF?oc=5",
+    "source": "中時新聞網",
+    "summary": "俄羅斯總統普丁邀請美國前總統川普與中國國家主席習近平舉行三方會談，商議俄烏戰事。此舉被外界解讀為可能促成「雅爾達密約2.0」版，顯示俄方尋求透過外交途徑解決衝突的意圖。"
+   },
+   {
+    "title": "北韓金與正怒轟南韓官員 宣布邊境進入待命",
+    "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOMkthSFNHYmdyWDBXR1AyWHh1RVFCSjF0aFRaVkFoeUtVQmFOMkhZREVvcVl0RDJOaFZhMHBLMTFZOVEzMnh6Y3dKejNZTElpR1ZDeGF1UFlzMFBKQnExSVczREEzZ3ZnS1hLVkFFek9JUUFYTmh4X2lVSWpyVXk4bFZfTmlyM1U5SmlPbHoyQ09TMVYzcjdVNkEtNXZJMFVyVWF2YlgxU1ltaTd4QnJlbkk2TGRqLWV1YWM5b084MEp3Y1ZDSGVFcDNjV2dtOHVyRlhaaGpzUzRuX3lxdFN3UUZhYWt6MEUzbFE3NnNkRkZISzNJSVpPV1I2NXA0VXE2c19Cdlpjb1QyTUpqblZ3MndITDR3MVE1RGFtOXlZWGpkMUdTSmpFaEhHcTBMckk3c3JocTBNa1VLQQ?oc=5",
     "source": "Yahoo新聞",
-    "summary": ""
+    "summary": "北韓領導人金正恩胞妹金與正怒轟南韓官員，並宣布北韓邊境部隊進入待命狀態。朝鮮半島緊張情勢再度升高，引發國際社會對區域穩定性的高度關注。"
    }
   ],
   "tw": [
    {
-    "title": "不斷更新／薔琵颱風來襲…24日還有颱風假？各縣市停班課狀況一次看",
+    "title": "薔琵颱風來襲 全台各縣市停班課狀況一次看",
     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XTHJVbW9DTXM5Y2FBTk1rV3NnUm1pbWYtWjgzUS0yYW42QThZWjNDeEh3Tk5aYlA3Q0FEXzFrQkVRcDhXeTJxdFRNR0Y2ZEkzSDRz?oc=5",
     "source": "UDN",
-    "summary": ""
+    "summary": "中度颱風薔琵來襲，暴風圈已接觸台灣東半部陸地，預計今晚至明晨為風雨最劇烈時刻。中央氣象署指出，全台多縣市已達停班課標準，提醒民眾留意最新資訊並做好防颱準備。"
    },
    {
-    "title": "全國唯一沒停班課！金門縣長候選人抽籤號次",
-    "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxObUJOQWZRQ3FhbnZRMmduQVYtVVd2dkFDZ2dkdjhpU05HY2tzX05yeXN3T3pjVzhPUkk1Vl9wUEpJTHhvWVEzSERYSTduZkw2c2NsU1lRR3NTTTRIaEtUTFBROXRQN195cFRaNUFFaC1vbEc5d01KS1RvaHltcjV2MVBGNi1pZWtxQlUxemU5UEFuX1JlaHNCdmlDUHlyWmg4aHNhMzFELVl2SVg4aEVjSmJ0QllaX3Y3WDNMbHhvQmdjQ2x5Q2c5SFN6czRLS3BGTDJBUW94aDBQRjctS1ZuS3JURklxemh4dTRXZ3pMOE9wc3drNlNaRmYwYkpfeEVmN2RiM2JxTXZMVVI5WVB3SklMTFlub1EtWWpHU3dKMTQ?oc=5",
-    "source": "Yahoo新聞",
-    "summary": ""
+    "title": "花蓮鳳林光電弊案涉賄近5千萬 多人遭羈押",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqOFJPYUh5bXR6a0haNzlIbzVEMzJjS05JOU1QdlVpYTVfenVKSFh1Z3lDVU9tRTlFUXJlcWZMazBEZ015bXhHVGJBbWxjZ0ZV0gFWQVVfeXFMT3YzZVVKVUUweERrMHBVVmRIZ09pZVFFMDlBY1ZtSTRDbGNkNTgxN05YZmFfUDBXODVKSGR2SGlHdnJnbDJwemJDNkl5bVNmeFZsS2NZT3c?oc=5",
+    "source": "UDN",
+    "summary": "花蓮鳳林光電開發弊案爆發，上市公司泓德能源涉嫌以「地方回饋金」名義行賄，金額近5千萬元。前鳳林鎮長蕭文龍、花蓮縣農會前總幹事官俊彥及泓德能源董事長謝源一等7人已被羈押禁見。"
    },
    {
-    "title": "謝長廷、姚文智、吳怡農曾喊松機遷廢！國民黨酸：全被沈伯洋打臉",
-    "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxPZk9Sc0pxckc4R09vV0RVMXU5N2FaT0VjV21vYlJETXJqeUtSZjNVcDlNSXk0aUF4NlR4YzdGSXlhdHJCbmZ5NG1FV1dHelhJMXN5aWlkWFFJOXRoMXM0NUZOSXB1QzV5UXZoMGVWZURzdlVsRnYwNElXQ3ZkLUFhdzFSb0FZX1pfU1RzUkdEZ1h2WF9YczFiZTh2ZlNVc1VKQUxFbmo2S3BXcDBuMlE2NVcyX0JBeHY2WVd3NzNlWEdLUkdFVmVZZUpncTdhMFBHYVNJcUpWN3JhVktXWGRaR2d5dWVneEV3TGtpc2pIR2tzdGdnbVR4MV92QXh2OTlyTnp0THYtZG9MSVRtT2JQVE1JZnFmd19fT09mdUZBUjN2NXNMaTZXZmx0aEQ1aDE1WG43TE9PT3FkazM0X0Z2S1VhcGJ3Z2dPd3ViQnNVY183YTRzRWFkNU04OW1iOGtvSzZDMGVRcXpxcGZJblJlNEpCNktpb0Z1TU1mUEJPX2prbHVNZ053LW5TU2NpUGN6?oc=5",
-    "source": "Yahoo新聞",
-    "summary": ""
+    "title": "美智庫揭中共介選北市 沈伯洋支持度追近蔣萬安",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE82clF2ejBvRmR6U0RabThHdTRnQ2haNU53VmN2bFZjazhQT29SMUlRNVBZYzc3bmhDT0FVQUhvV1pBNmlwc2RLVg?oc=5",
+    "source": "三立新聞",
+    "summary": "美國智庫報告揭露中共加壓介選台北市，同時民調顯示民進黨台北市長參選人沈伯洋支持度追近蔣萬安。此議題引發外界對台灣選舉受外部勢力影響的關注，選情更趨白熱化。"
    },
    {
-    "title": "吳子嘉親曝被約談真相！鄭朝方強硬表態了",
-    "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQMVZpOVRacHhHeUZTekhMbmU5TGhmNC1LQjQ0c3JvVjFzTXFVRlFRZFdyQUFVdGNrSEExWVJwZ3ZCcDV4X3UwYzhPVFJ1WHFaLU1yaXI0NHV4bmVjYVBSNEptS1AyQkFZYmZYRGZ2NWlldjg3WXh1S0tYTllpWlNodzJ0X0Q5Q2VQaFdOd0Jqd3diYXB1eFo4X0hyRHNDV01JQ1NwQnE1Wjg1eVRBekN3VjRvVDYyVGgtWnBYRzZObkZycG9mMUFsMFRHQklMcFhUd2RsSXdENEFXWmpNLXJ4cEJBaTZrVTZKSkMxZGk1TlVUTmVMSllWRUowcHBidkdJa3hKUVZhSUJybi1pTXktN0FmWENySFl6YU5BVUpLX2FfMnEwdEhoZnUxYzM?oc=5",
-    "source": "Yahoo新聞",
-    "summary": ""
+    "title": "憲兵隊長涉飆罵部屬隱匿危安 官兵集體申訴遭調職",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1vdmtOWHF5LTdpTWxpN0R6SGlRZlFZVTNCMXJNdWFiUEVKLXRXXzVJUTNFVmJEY2d3cGk3TVdUVkpKa3ZRXzc2bjRRN2FKZTY4aVHSAVdBVV95cUxQS3RhRXpwV21YckFOSy01bWpOTFd0Vjl5RXBsQ1M4Sy1jTEsxeEtxR0RTNHN5MHQ5d2lZeWRDekxBMHc2SGxhUWJTczVyTFlPdm85T3BBZHM?oc=5",
+    "source": "UDN",
+    "summary": "台北憲兵隊上校隊長蔡正建遭官兵集體向總統府及國防部申訴，指控其多次用侮辱性字眼飆罵部屬並隱匿重大官兵安全及自傷事件。憲兵指揮部已將該隊長調離現職並展開調查。"
    },
    {
-    "title": "趙少康專訪》蘇巧慧談新北主體性 質疑李四川政見超乎理解",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yRTFENm81WUsxTWQ2NThMOElLVVhJTUdwTGtpMlpGRHBacERBeW5kdElDdzVEekZKOER6RDZBN2ZqMVVCZjd1QkZPM0FTMUZHWmcyMC1OQUF0MXluWjN4RGkxYjhjOTgwNmfSAW9BVV95cUxONnBsQmZQOHRWRnZoTHR2QVZGMkZXaVRCTENSRXgtT1JSb0tzbDRLNVFNclpUeE4tT1hwelFPanBjTXhqaXIxQWIyUURVMmxRZDBpcFpWTnRXWk4yNjdzUGJqUjdpNmp0VDY0SEZ5TUE?oc=5",
+    "title": "中國網紅來台宣傳代孕挨罰20萬 今晚驅逐出境",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBkamF1RHlEaXNxMnQ4eTNLQ3JKU2JiTHpFdlBLNFh4ZHFrY0E5SGQzdVZmVUY1Qi0xcWN6c3MtaktfWTN2YmhkNjZsNjNXUDItNkxTOEZDUkZoZFdLWEVkTFRBRWRibk9NY2fSAW9BVV95cUxQRExoeEdZaXdRUTlYM0ZYblpsNHFVdkJZOHRSeHJkNHZmZUhLc0NaWlNUQmNpWjVxVHZkNVotek42QnlZRVFuMWVSb3RxN1pGN1NPMm0tVlVtVHVUUVNCQnk4Rnhxd2tvaHhRY3JZdzg?oc=5",
     "source": "自由時報",
-    "summary": ""
+    "summary": "一名中國籍網紅與外籍伴侶以觀光名義來台，卻在社群平台宣傳「天使計劃」招攬代孕服務，違反《醫療法》。高雄市衛生局裁罰20萬元，移民署已將兩人驅逐出境，並管制一定期間不得再來台。"
    }
   ],
   "kl": [
    {
-    "title": "鏡新聞民調》黃金交叉！童子瑋險勝謝國樑0.7% 過半數基隆市民同意換人執政",
+    "title": "鏡新聞民調：童子瑋支持度黃金交叉險勝謝國樑",
     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5wTWdXZFM4VlY4YmwyYmxaNUFqQmU3R2lXWURfOUJRSWw2TU0wZXVtZk1qZUVrejBVaXZsTmNuN25LNFJVSTBIS3lfY3RDS05PUkRJMUtkbEc2a3c?oc=5",
     "source": "Newtalk新聞",
-    "summary": ""
+    "summary": "鏡新聞最新民調顯示，基隆市長參選人童子瑋支持度以37.0%微幅領先現任市長謝國樑的36.3%，呈現黃金交叉。另有逾半數市民同意換人執政，顯示基隆選情緊繃。"
    },
    {
-    "title": "基隆市長選戰民調分歧 謝國樑、童子瑋支持度拉鋸",
-    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA3UC1ibUtQYzU2bHRQRkVzYkpNXzRlaUU1WGZVYnllSjNBMzY0R0xfTjBjbW9Pd2tMM0Rqa0hnN1dyZHdEYkd6NEdoY0tJWmZtRkdvcDVJZzU?oc=5",
-    "source": "Taiwan News",
-    "summary": ""
-   },
-   {
-    "title": "薔琵來襲！就怕基隆淹大水　謝國樑急調度防水擋板、沙包",
+    "title": "薔琵颱風進逼基隆 謝國樑急調度防水擋板沙包",
     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56ck9FX2JMSlB5TmloR1RnNVV1VDVuT1BWS3hjRlB2eS1NTWliZS1NZDM0amdJUlNDMFhzTGkzT2FzOGQyOHNhTVZZZGV4OHdqM3fSAVJBVV95cUxOenJPRV9iTEpQeU5paEdUZzVVdVQ1bk9QVkt4Y0ZQdnktTU1pYmUtTWQzNGpnSVJTQzBYc0xpM09hczhkMjhzYU1WWWRleDh3ajN3?oc=5",
     "source": "NOWnews今日新聞",
-    "summary": ""
+    "summary": "薔琵颱風來襲，基隆市面臨強風豪雨威脅。市長謝國樑緊急視察西定路及南榮路等低窪地區，並調度防水擋板、沙包等防颱物資，呼籲市民加強防護措施，確保生命財產安全。"
    },
    {
-    "title": "培育青年！ 謝國樑啟動「基隆青年3+1」政策 承諾投入千萬",
+    "title": "謝國樑啟動「基隆青年3+1」政策 承諾投入千萬",
     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAyTnhmSjVxbVVqR29FSkt4QjE0T2lSbWlZZjV1ZTNRTEp3MG5Wc0tDT25QUDZpOUkzQkFfZExZcDVWMFVMOElZeHRSSHhSMkg3aXJn?oc=5",
     "source": "TVBS新聞網",
-    "summary": ""
+    "summary": "為培育青年人才，市長謝國樑宣布啟動「基隆青年3+1」政策，整合音樂、表演、街舞及潮流競技四大領域，承諾未來五年每年投入至少1000萬元，旨在提供青年更多發展機會。"
    },
    {
-    "title": "薔琵颱風進逼基隆！謝國樑視察低窪區防颱：今天不談民調",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5lRTVOakhyZVBDWGxxeVd3YzM0WS0xOHZkQm8ycFpzMWpsWkVvd3FJdUttOWc1QWxDb1Nuc3N1VzQ3OHVXLUhfalVTWmF0dXhNN2VCY0h3Y0hOcE9ENWplX0NKWmxhNGNTc0h2RkxR?oc=5",
-    "source": "中時新聞網",
-    "summary": ""
+    "title": "謝國樑鼓勵裝防水閘門 減輕西定南榮路淹水災情",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE16bVpMcVMyRFJ5Vl9BelNiYjhnT1VVTEFGMWRsdzJveEFWc0RXeHl2MXlkOU5SR1RDaGd1czlIb253NU1EWmxZM01fV1dTWURCUm1mVlBR?oc=5",
+    "source": "UDN",
+    "summary": "針對上月西定、南榮路強降雨淹水問題，市長謝國樑鼓勵店家及市民多安裝防水閘門以減輕災情。市府將持續推動防洪措施，並協助有需求的民眾申請，保障市民生命財產安全。"
+   },
+   {
+    "title": "沈伯洋將赴基隆助選 童子瑋「柔性陸戰」鋪地基",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5LRkVzdURXWklCdFVvVTdjUFFqNm16M3hVNUZlQXJDbl9TTGlnNzlxb1FUT0cyY3dQOGsyVGpQLU9zaFFRZ09qbUdvRDJUV2VIZWc?oc=5",
+    "source": "鏡報",
+    "summary": "民進黨台北市長參選人沈伯洋將於10月26日前往基隆助選，為童子瑋空戰加溫。同時，童子瑋團隊也透過「柔性陸戰」深耕基層，力求在選戰中取得優勢，爭取更多市民認同。"
    }
   ]
  },
