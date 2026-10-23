@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fcee0a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="晨間快報">
+<title>晨間快報 // MORNING.SYS</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M0 0h52l12 12v52H0z' fill='%23fcee0a'/%3E%3Cpath d='M14 46V18h8l10 14 10-14h8v28h-8V32l-10 13-10-13v14z' fill='%23000'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Share+Tech+Mono&display=swap">
+<style>
+:root {
+  --bg: #07080b;
+  --panel: #0e1016;
+  --raised: #151821;
+  --yellow: #fcee0a;
+  --cyan: #00f0ff;
+  --red: #ff003c;
+  --text: #ebe8dc;
+  --dim: #8d8b7e;
+  --line: rgba(252, 238, 10, .2);
+  --cut: 14px;
+  --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --tech: "Rajdhani", "Noto Sans TC", system-ui, sans-serif;
+  --mono: "Share Tech Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+  font: 15px/1.6 var(--sans); overflow-x: hidden;
+  background-image: radial-gradient(120% 60% at 100% 0, rgba(0, 240, 255, .06), transparent 60%),
+                    radial-gradient(80% 50% at 0 100%, rgba(255, 0, 60, .05), transparent 60%);
+  background-attachment: fixed;
+}
+body::after { /* faint CRT scanlines */
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50;
+  background: repeating-linear-gradient(0deg, rgba(255,255,255,.018) 0 1px, transparent 1px 3px);
+}
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+
+/* ---------- hero ---------- */
+.hero {
+  position: relative; background: var(--yellow); color: #000;
+  padding: calc(14px + env(safe-area-inset-top)) 18px 30px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 22px), calc(100% - 22px) 100%, 0 100%);
+}
+.hero::after { /* hazard stripe */
+  content: ""; position: absolute; left: 0; right: 22px; bottom: 0; height: 8px;
+  background: repeating-linear-gradient(-45deg, #000 0 8px, transparent 8px 16px);
+}
+.hero-in { max-width: 1200px; margin: 0 auto; }
+.hero-top { display: flex; justify-content: space-between; font: 12px var(--mono); letter-spacing: .12em; }
+.hero h1 {
+  position: relative; margin: 6px 0 0; font: 900 clamp(44px, 13vw, 92px)/1 var(--sans);
+  letter-spacing: .04em; text-transform: uppercase;
+}
+.glitch::before, .glitch::after {
+  content: attr(data-text); position: absolute; inset: 0; pointer-events: none; opacity: 0;
+}
+.glitch::before { color: var(--cyan); animation: g1 5s infinite steps(1); }
+.glitch::after { color: var(--red); animation: g2 5s infinite steps(1); }
+@keyframes g1 { 0%,91%,100% { opacity: 0 } 92% { opacity: .9; transform: translate(-4px, 1px); clip-path: inset(10% 0 55% 0) } 95% { opacity: .9; transform: translate(3px,-1px); clip-path: inset(60% 0 12% 0) } }
+@keyframes g2 { 0%,92%,100% { opacity: 0 } 93% { opacity: .85; transform: translate(4px, 0); clip-path: inset(40% 0 30% 0) } 96% { opacity: .85; transform: translate(-3px, 1px); clip-path: inset(5% 0 75% 0) } }
+.hero-sub { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; margin-top: 8px; font: 700 18px var(--tech); letter-spacing: .06em; }
+.hero-sub .en { font: 13px var(--mono); letter-spacing: .14em; opacity: .7; }
+
+/* ---------- layout ---------- */
+main {
+  max-width: 1200px; margin: 0 auto; padding: 18px 14px calc(40px + env(safe-area-inset-bottom));
+  display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "brief" "wx" "cal" "news" "bird";
+}
+@media (min-width: 960px) {
+  main { padding: 26px 24px 60px; gap: 20px; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+    grid-template-areas: "brief cal" "wx cal" "news bird"; align-items: start; }
+}
+.panel {
+  position: relative; background: linear-gradient(180deg, var(--raised), var(--panel) 70%);
+  padding: 0 16px 18px; border-top: 2px solid var(--yellow);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%);
+}
+.panel::after { /* cyan base tick */
+  content: ""; position: absolute; left: 0; bottom: 0; width: 44px; height: 2px; background: var(--cyan);
+}
+.ph {
+  display: flex; align-items: center; gap: 10px; margin: 0 -16px 14px; padding: 0 16px 0 0;
+  font: 700 15px var(--sans); letter-spacing: .08em;
+}
+.ph b {
+  background: var(--yellow); color: #000; padding: 3px 18px 3px 16px; font-weight: 900;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+.ph i { font: 12px var(--mono); font-style: normal; color: var(--dim); letter-spacing: .16em; }
+.ph .tail { margin-left: auto; font: 11px var(--mono); color: var(--cyan); letter-spacing: .12em; }
+
+.btn {
+  --c: var(--yellow); display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  border: 0; background: var(--c); color: #000; cursor: pointer; text-decoration: none;
+  font: 700 14px var(--tech); letter-spacing: .1em; padding: 9px 18px 9px 14px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 9px), calc(100% - 9px) 100%, 0 100%);
+  transition: background .15s;
+}
+.btn:hover { --c: var(--cyan); }
+.btn.ghost { background: transparent; color: var(--yellow); box-shadow: inset 0 0 0 1px var(--yellow); }
+.btn.ghost:hover { color: var(--cyan); box-shadow: inset 0 0 0 1px var(--cyan); }
+.btn:disabled { opacity: .45; cursor: progress; }
+
+/* ---------- briefing ---------- */
+#brief { grid-area: brief; }
+.play {
+  width: 100%; padding: 16px 20px; font-size: 20px; justify-content: space-between;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+}
+.play small { font: 12px var(--mono); letter-spacing: .14em; }
+.play.on { --c: var(--red); color: #fff; }
+.play .bars { display: inline-flex; gap: 3px; align-items: flex-end; height: 18px; }
+.play .bars span { width: 4px; height: 30%; background: currentColor; }
+.play.on .bars span { animation: eq .8s ease-in-out infinite; }
+.play.on .bars span:nth-child(2) { animation-delay: .15s } .play.on .bars span:nth-child(3) { animation-delay: .3s } .play.on .bars span:nth-child(4) { animation-delay: .1s }
+@keyframes eq { 50% { height: 100% } }
+.status { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 14px; font: 12px var(--mono); color: var(--dim); }
+.status .dot { width: 8px; height: 8px; background: var(--dim); flex: none; }
+.status[data-s="ok"] .dot { background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
+.status[data-s="stale"] .dot, .status[data-s="busy"] .dot { background: var(--yellow); animation: blink 1s steps(2) infinite; }
+.status[data-s="err"] .dot { background: var(--red); }
+.status[data-s="err"] #statusText { color: var(--red); }
+#statusText { flex: 1 1 200px; letter-spacing: .04em; }
+.status .acts { display: flex; gap: 8px; }
+.status .btn { padding: 7px 14px 7px 12px; font-size: 13px; }
+@keyframes blink { 50% { opacity: .2 } }
+
+/* ---------- weather ---------- */
+#wx { grid-area: wx; }
+.wx-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.wx-card { background: rgba(0,0,0,.35); box-shadow: inset 0 0 0 1px var(--line); padding: 12px; }
+.wx-loc { display: flex; justify-content: space-between; gap: 6px; font: 12px var(--mono); color: var(--cyan); letter-spacing: .08em; }
+.wx-loc .tag { color: var(--yellow); }
+.wx-loc .tag.wet { color: var(--red); }
+.wx-temp { font: 700 52px/1 var(--tech); margin: 8px 0 2px; font-variant-numeric: tabular-nums; }
+.wx-temp sup { font-size: 20px; color: var(--yellow); vertical-align: 26px; margin-left: 2px; }
+.wx-meta { font: 12.5px var(--mono); color: var(--dim); display: grid; gap: 2px; }
+.wx-meta b { color: var(--text); font-weight: 400; }
+.wx-meta .rain b { color: var(--cyan); }
+.advice { margin-top: 12px; padding: 10px 12px 10px 14px; font-size: 14px; line-height: 1.7;
+  background: linear-gradient(90deg, rgba(255,0,60,.14), transparent 80%); border-left: 3px solid var(--red); }
+.advice::before { content: "ADVISORY // 穿著建議"; display: block; font: 11px var(--mono); color: var(--red); letter-spacing: .14em; margin-bottom: 3px; }
+
+/* ---------- news ---------- */
+#news { grid-area: news; }
+.tabs { display: flex; gap: 6px; margin-bottom: 6px; }
+.tab {
+  flex: 1; border: 0; cursor: pointer; padding: 9px 4px; font: 700 15px var(--sans); letter-spacing: .06em;
+  background: transparent; color: var(--yellow); box-shadow: inset 0 0 0 1px var(--line);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+}
+.tab small { display: block; font: 10px var(--mono); letter-spacing: .14em; opacity: .7; }
+.tab[aria-selected="true"] { background: var(--yellow); color: #000; box-shadow: none; }
+.news-list { list-style: none; margin: 0; padding: 0; counter-reset: n; }
+.news-list li { border-top: 1px solid rgba(255,255,255,.07); }
+.news-list li:first-child { border-top: 0; }
+.news-list a { display: grid; grid-template-columns: 30px 1fr; gap: 0 8px; padding: 12px 0; text-decoration: none; }
+.news-list a::before { counter-increment: n; content: counter(n, decimal-leading-zero); font: 700 16px var(--tech); color: var(--yellow); grid-row: span 3; }
+.news-list a:hover .nt { color: var(--cyan); }
+.nt { font-weight: 700; font-size: 15.5px; line-height: 1.45; text-wrap: pretty; }
+.ns { color: #b9b6a8; font-size: 13.5px; margin-top: 4px; }
+.nm { font: 11.5px var(--mono); color: var(--cyan); margin-top: 5px; letter-spacing: .06em; }
+.empty { padding: 14px 0; color: var(--dim); font-size: 14px; }
+
+/* ---------- calendar ---------- */
+#cal { grid-area: cal; }
+.ev { display: grid; grid-template-columns: 56px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid rgba(255,255,255,.07); }
+.ev:first-child { border-top: 0; }
+.ev time { font: 700 17px var(--tech); color: var(--cyan); font-variant-numeric: tabular-nums; }
+.ev .et { font-weight: 500; }
+.ev .ec { font: 11px var(--mono); color: var(--dim); letter-spacing: .06em; }
+.cal-free { padding: 14px; color: var(--cyan); box-shadow: inset 0 0 0 1px rgba(0,240,255,.35); font-size: 14px; }
+
+/* ---------- bird ---------- */
+#bird { grid-area: bird; }
+.bird-fig { position: relative; margin: 0 0 12px; aspect-ratio: 16/10; background: #000; overflow: hidden; }
+.bird-fig img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(1.08) contrast(1.04); }
+.bird-fig::before, .bird-fig::after { content: ""; position: absolute; width: 18px; height: 18px; border: 2px solid var(--yellow); z-index: 1; }
+.bird-fig::before { top: 8px; left: 8px; border-right: 0; border-bottom: 0; }
+.bird-fig::after { right: 8px; bottom: 8px; border-left: 0; border-top: 0; }
+.bird-fig figcaption { position: absolute; left: 0; bottom: 0; max-width: 85%; padding: 3px 8px; font: 10px var(--mono); color: var(--dim); background: rgba(0,0,0,.72); }
+.bird-fig figcaption a { text-decoration: none; }
+.bird-name { font: 900 22px var(--sans); letter-spacing: .04em; }
+.bird-sci { font: 12.5px var(--mono); color: var(--dim); font-style: italic; }
+.bird-desc { font-size: 14px; color: #c9c6b8; margin: 10px 0 14px; }
+.bird .btn { width: 100%; }
+
+.foot { grid-column: 1 / -1; font: 11px var(--mono); color: var(--dim); text-align: center; letter-spacing: .08em; }
+
+/* ---------- settings ---------- */
+dialog {
+  width: min(460px, calc(100vw - 28px)); border: 0; padding: 0; background: var(--panel); color: var(--text);
+  border-top: 3px solid var(--yellow); clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+}
+dialog::backdrop { background: rgba(0,0,0,.75); }
+dialog form { padding: 0 18px 20px; display: grid; gap: 14px; }
+dialog .ph { margin-bottom: 0; }
+dialog label { display: grid; gap: 5px; font-size: 13px; font-weight: 700; }
+dialog label span { font: 11.5px var(--mono); color: var(--dim); font-weight: 400; }
+dialog input {
+  font: 14px var(--mono); color: var(--text); background: #000; border: 0; padding: 10px;
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+dialog input:focus { box-shadow: inset 0 0 0 1px var(--cyan); outline: 0; }
+dialog .msg { color: var(--red); font: 12px var(--mono); min-height: 1em; margin: 0; }
+dialog .row { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <div class="hero-top"><span>NC//MORNING.SYS v3</span><span id="clock">--:--:--</span></div>
+    <h1 class="glitch" data-text="晨間快報">晨間快報</h1>
+    <div class="hero-sub"><span id="dateLine">—</span><span class="en">KEELUNG CITY · DAILY BRIEFING</span></div>
+  </div>
+</header>
+
+<main>
+  <section class="panel" id="brief">
+    <h2 class="ph"><b>語音簡報</b><i>BRIEFING</i></h2>
+    <button class="btn play" id="playBtn" type="button">
+      <span>▶ 播放晨間簡報</span>
+      <small class="bars" aria-hidden="true"><span></span><span></span><span></span><span></span></small>
+    </button>
+    <div class="status" id="status" data-s="busy" role="status" aria-live="polite">
+      <span class="dot"></span>
+      <span id="statusText">連線中…</span>
+      <span class="acts">
+        <button class="btn" id="refreshBtn" type="button">立即更新</button>
+        <button class="btn ghost" id="setBtn" type="button" aria-label="設定">⚙</button>
+      </span>
+    </div>
+  </section>
+
+  <section class="panel" id="wx">
+    <h2 class="ph"><b>天氣預報</b><i>WEATHER</i><span class="tail" id="wxTime"></span></h2>
+    <div class="wx-grid" id="wxGrid"><p class="empty">讀取氣象資料…</p></div>
+    <p class="advice" id="advice" hidden></p>
+  </section>
+
+  <section class="panel" id="cal">
+    <h2 class="ph"><b>今日行程</b><i>AGENDA</i></h2>
+    <div id="calBox"><p class="empty">讀取中…</p></div>
+  </section>
+
+  <section class="panel" id="news">
+    <h2 class="ph"><b>新聞</b><i>NEWSFEED</i><span class="tail" id="newsTime"></span></h2>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <ol class="news-list" id="newsList" role="tabpanel"></ol>
+  </section>
+
+  <section class="panel bird" id="bird">
+    <h2 class="ph"><b>今日鳥類</b><i>BIRD.OF.THE.DAY</i></h2>
+    <div id="birdBox"><p class="empty">讀取中…</p></div>
+  </section>
+
+  <p class="foot">WEATHER // OPEN-METEO · NEWS // GOOGLE NEWS + GEMINI · BIRD // WIKIMEDIA</p>
+</main>
+
+<dialog id="settings">
+  <form method="dialog" id="setForm">
+    <h2 class="ph"><b>設定</b><i>CONFIG</i></h2>
+    <label>Gemini API Key
+      <input id="fKey" type="password" autocomplete="off" spellcheck="false" placeholder="AIza…">
+      <span>到 <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> 免費產生後貼上。只存在這台裝置的瀏覽器，不會上傳。</span>
+    </label>
+    <label>Gemini 模型（選填）
+      <input id="fModel" autocomplete="off" spellcheck="false" placeholder="gemini-flash-latest">
+    </label>
+    <label>行事曆密語
+      <input id="fCal" type="password" autocomplete="off" placeholder="與 GitHub Secret CAL_KEY 相同">
+      <span>用來解鎖加密的行事曆；未設定行事曆同步可留空。</span>
+    </label>
+    <p class="msg" id="setMsg"></p>
+    <div class="row">
+      <button class="btn ghost" value="cancel" formnovalidate>取消</button>
+      <button class="btn" id="saveBtn" value="save">儲存</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+"use strict";
+const PLACES = [
+  { city: "台北", name: "內湖區", lat: 25.0839, lon: 121.5872 },
+  { city: "基隆", name: "中正區", lat: 25.1516, lon: 121.7643 },
+];
+const TABS = [["intl", "國際", "WORLD"], ["tw", "國內", "TAIWAN"], ["kl", "基隆市府", "KEELUNG"]];
+const BIRDS = [
+  ["五色鳥", "Psilopogon nuchalis"], ["黃山雀", "Machlolophus holsti"], ["綠繡眼", "Zosterops simplex"],
+  ["翠鳥", "Alcedo atthis"], ["紅胸啄花鳥", "Dicaeum ignipectus"], ["紅嘴相思鳥", "Leiothrix lutea"],
+  ["火冠戴菊鳥", "Regulus goodfellowi"], ["栗背林鴝", "Tarsiger johnstoniae"], ["叉尾太陽鳥", "Aethopyga christinae"],
+  ["粉紅鸚嘴", "Sinosuthora webbiana"], ["白腰文鳥", "Lonchura striata"], ["黃腹琉璃", "Niltava vivida"],
+  ["冠羽畫眉", "Yuhina brunneiceps"], ["紅頭山雀", "Aegithalos concinnus"], ["青背山雀", "Parus monticolus"],
+  ["黃胸藪眉", "Liocichla steerii"], ["煤山雀", "Periparus ater"], ["斑文鳥", "Lonchura punctulata"],
+  ["麻雀", "Passer montanus"], ["黃尾鴝", "Phoenicurus auroreus"], ["黃眉黃鶲", "Ficedula narcissina"],
+  ["鉛色水鶇", "Phoenicurus fuliginosus"], ["赤腹山雀", "Sittiparus castaneoventris"], ["酒紅朱雀", "Carpodacus formosanus"],
+  ["北長尾山雀", "Aegithalos caudatus"], ["歐亞鴝", "Erithacus rubecula"], ["藍山雀", "Cyanistes caeruleus"],
+  ["黃雀", "Spinus spinus"], ["白頭翁", "Pycnonotus sinensis"], ["戴菊鳥", "Regulus regulus"],
+];
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const LS = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { v == null || v === "" ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} },
+  json(k) { try { return JSON.parse(this.get(k)); } catch { return null; } },
+};
+function h(tag, props = {}, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) k in el ? (el[k] = v) : el.setAttribute(k, v);
+  el.append(...kids.flat().filter(x => x != null && x !== false));
+  return el;
+}
+const today = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Taipei" }).format(new Date());
+const hhmm = iso => new Date(iso).toLocaleTimeString("zh-TW", { timeZone: "Asia/Taipei", hour: "2-digit", minute: "2-digit", hour12: false });
+const mmdd = iso => new Intl.DateTimeFormat("zh-TW", { timeZone: "Asia/Taipei", month: "2-digit", day: "2-digit" }).format(new Date(iso));
+const plain = html => new DOMParser().parseFromString(html || "", "text/html").body.textContent.trim();
+async function getJSON(url, opt) {
+  const r = await fetch(url, { cache: "no-store", ...opt });
+  if (!r.ok) throw Error(`HTTP ${r.status}`);
+  return r.json();
+}
+const state = { wx: null, advice: "", news: LS.json("news"), cal: null, events: null, bird: null };
+
+function setStatus(s, text) { $("#status").dataset.s = s; $("#statusText").textContent = text; }
+function showFreshness() {
+  const n = state.news;
+  if (!n) return setStatus("stale", "尚無新聞資料 · 貼上 Gemini 金鑰後按「立即更新」");
+  const src = n.source === "browser" ? "本機 GEMINI" : n.ai ? "雲端排程 · GEMINI" : "雲端排程";
+  const fresh = n.date === today();
+  setStatus(fresh ? "ok" : "stale", `${fresh ? "SYNCED" : "STALE"} // ${mmdd(n.updatedAt)} ${hhmm(n.updatedAt)} · ${src}`);
+}
+
+/* ---------- weather (live on every load) ---------- */
+const wmo = c => c === 0 ? "晴" : c <= 2 ? "晴時多雲" : c === 3 ? "陰" : c <= 48 ? "霧" : c <= 57 ? "毛毛雨" : c <= 67 ? "雨" : c <= 77 ? "雪" : c <= 82 ? "陣雨" : c <= 86 ? "陣雪" : "雷雨";
+function advise(days) {
+  const max = k => Math.max(...days.map(d => d[k])), hi = max("hi"), lo = Math.min(...days.map(d => d.lo));
+  const feel = max("feel"), rain = max("rain"), wind = max("wind");
+  const t = [feel >= 33 ? "高溫悶熱，穿輕薄排汗衣物、多補水並注意防曬"
+    : hi >= 28 ? "偏熱，短袖透氣衣物即可" : hi >= 23 ? "溫度舒適，短袖或薄長袖"
+    : hi >= 18 ? "微涼，長袖再加一件薄外套" : hi >= 12 ? "偏冷，穿毛衣或夾克" : "寒冷，厚外套與圍巾保暖"];
+  if (rain >= 60) t.push("降雨機率高，雨具隨身、鞋子選防水");
+  else if (rain >= 30) t.push("可能下雨，包包放把折傘");
+  if (hi - lo >= 8) t.push("早晚溫差大，多帶一件外套");
+  if (wind >= 35) t.push("風勢偏強，雨衣比雨傘實用");
+  return t.join("；") + "。";
+}
+async function loadWeather() {
+  const q = k => PLACES.map(p => p[k]).join(",");
+  const res = await getJSON(`https://api.open-meteo.com/v1/forecast?latitude=${q("lat")}&longitude=${q("lon")}` +
+    "&current=temperature_2m,apparent_temperature,relative_humidity_2m" +
+    "&daily=weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,precipitation_probability_max,wind_speed_10m_max" +
+    "&timezone=Asia%2FTaipei&forecast_days=1");
+  state.wx = [].concat(res).map((r, i) => ({
+    ...PLACES[i], temp: Math.round(r.current.temperature_2m), feelNow: Math.round(r.current.apparent_temperature),
+    hum: r.current.relative_humidity_2m, code: r.daily.weather_code[0], hi: Math.round(r.daily.temperature_2m_max[0]),
+    lo: Math.round(r.daily.temperature_2m_min[0]), feel: r.daily.apparent_temperature_max[0],
+    rain: r.daily.precipitation_probability_max[0] ?? 0, wind: r.daily.wind_speed_10m_max[0], time: r.current.time,
+  }));
+  state.advice = advise(state.wx);
+  $("#wxGrid").replaceChildren(...state.wx.map(w => h("div", { className: "wx-card" },
+    h("div", { className: "wx-loc" }, h("span", {}, `${w.city} · ${w.name}`),
+      h("span", { className: "tag" + (w.code >= 51 ? " wet" : "") }, wmo(w.code))),
+    h("div", { className: "wx-temp" }, String(w.temp), h("sup", {}, "°C")),
+    h("div", { className: "wx-meta" },
+      h("span", {}, "體感 ", h("b", {}, `${w.feelNow}°`), " · 濕度 ", h("b", {}, `${w.hum}%`)),
+      h("span", {}, "高/低 ", h("b", {}, `${w.hi}° / ${w.lo}°`)),
+      h("span", { className: "rain" }, "降雨 ", h("b", {}, `${w.rain}%`))))));
+  $("#advice").hidden = false;
+  $("#advice").textContent = state.advice;
+  $("#wxTime").textContent = `LIVE ${state.wx[0].time.slice(11)}`;
+}
+
+/* ---------- news ---------- */
+let tab = LS.get("tab") || "intl";
+function renderNews() {
+  $("#tabs").replaceChildren(...TABS.map(([k, zh, en]) => h("button", {
+    className: "tab", type: "button", role: "tab", ariaSelected: String(k === tab),
+    onclick: () => { tab = k; LS.set("tab", k); renderNews(); },
+  }, zh, h("small", {}, en))));
+  const items = state.news?.news?.[tab] || [];
+  $("#newsList").replaceChildren(...(items.length ? items.map(n => h("li", {}, h("a", { href: n.url, target: "_blank", rel: "noopener" },
+    h("div", { className: "nt" }, n.title),
+    n.summary && h("div", { className: "ns" }, n.summary),
+    h("div", { className: "nm" }, `↗ ${n.source || "SOURCE"}`)))) : [h("li", { className: "empty" }, "這個分類目前沒有新聞。")]));
+  $("#newsTime").textContent = state.news ? `${mmdd(state.news.updatedAt)} ${hhmm(state.news.updatedAt)}` : "";
+  showFreshness();
+}
+
+const PROMPT = d => `今天是 ${d}（台灣時間）。請用 Google 搜尋近 24–48 小時的新聞，為基隆市政府官員整理晨間簡報：
+- intl：5 則最重大的國際新聞
+- tw：5 則最重大的台灣國內新聞
+- kl：5 則與基隆市政府相關、官員最該注意的新聞（市政決策、首長動向、公共安全、議會、民生權益優先）
+每則提供：繁體中文標題 title（28 字內）、2–3 句摘要 summary（90 字內）、媒體名稱 source、原文網址 url（必須是搜尋到的真實網址，不確定就留空字串）。同一事件只列一次。
+只輸出 JSON：{"intl":[{"title":"","summary":"","source":"","url":""}],"tw":[],"kl":[]}`;
+
+async function gemini(key, prompt) {
+  const models = [...new Set([LS.get("gemini_model"), "gemini-flash-latest", "gemini-2.5-flash"].filter(Boolean))];
+  let err = "沒有可用的模型";
+  for (const m of models) {
+    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(m)}:generateContent`, {
+      method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], tools: [{ google_search: {} }], generationConfig: { temperature: 0.3 } }),
+    });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      err = j.error?.message || `HTTP ${r.status}`;
+      if (r.status === 401 || r.status === 403 || /API key/i.test(err)) throw Error("金鑰無效或尚未啟用");
+      if (r.status === 429) throw Error("今日免費額度已用完，明天再試");
+      continue; // model unavailable → try the next one
+    }
+    const text = (j.candidates?.[0]?.content?.parts || []).map(p => p.text || "").join("");
+    try { return JSON.parse(text.match(/\{[\s\S]*\}/)[0]); } catch { err = "回傳內容無法解析"; }
+  }
+  throw Error(err);
+}
+const newsLink = n => /^https?:\/\//.test(n.url || "") ? n.url
+  : `https://news.google.com/search?q=${encodeURIComponent(n.title)}&hl=zh-TW&gl=TW&ceid=TW:zh-Hant`;
+
+async function refreshNews() {
+  const key = LS.get("gemini_key");
+  if (!key) return openSettings("請先貼上 Gemini API Key，才能在這台裝置直接更新新聞。");
+  $("#refreshBtn").disabled = true;
+  setStatus("busy", "GEMINI // 搜尋並整理今日新聞，約需 20–40 秒…");
+  try {
+    const out = await gemini(key, PROMPT(today()));
+    const news = Object.fromEntries(TABS.map(([k]) => [k, (out[k] || []).slice(0, 5)
+      .filter(n => n && n.title).map(n => ({ title: n.title, summary: n.summary || "", source: n.source || "", url: newsLink(n) }))]));
+    if (!TABS.some(([k]) => news[k].length)) throw Error("沒有取得任何新聞");
+    state.news = { date: today(), updatedAt: new Date().toISOString(), ai: true, source: "browser", news };
+    LS.set("news", JSON.stringify(state.news));
+    renderNews();
+  } catch (e) {
+    setStatus("err", `更新失敗：${e.message}`);
+  } finally {
+    $("#refreshBtn").disabled = false;
+  }
+}
+
+/* ---------- data.json from the daily GitHub Action (news + encrypted calendar) ---------- */
+async function loadData() {
+  try {
+    const d = await getJSON(`data.json?t=${Date.now()}`);
+    state.cal = d.calendar || null;
+    if (d.news && (!state.news || Date.parse(d.updatedAt) > Date.parse(state.news.updatedAt))) {
+      state.news = { date: d.date, updatedAt: d.updatedAt, ai: d.ai, source: "action", news: d.news };
+      LS.set("news", JSON.stringify(state.news));
+    }
+  } catch { /* opened without data.json (e.g. local file) — keep cached news */ }
+  renderNews();
+  renderCal();
+}
+
+/* ---------- calendar (AES-GCM, decrypted locally) ---------- */
+async function decrypt(enc, pass) {
+  const b = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+  const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"]);
+  const key = await crypto.subtle.deriveKey({ name: "PBKDF2", salt: b(enc.salt), iterations: enc.iter, hash: "SHA-256" },
+    base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+  return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({ name: "AES-GCM", iv: b(enc.iv) }, key, b(enc.data))));
+}
+async function renderCal() {
+  const box = $("#calBox"), pass = LS.get("cal_pass");
+  state.events = null;
+  if (!state.cal) return box.replaceChildren(h("p", { className: "empty" }, "行事曆同步尚未設定（見 README 第 4 步）。"));
+  if (!pass) return box.replaceChildren(h("button", { className: "btn ghost", type: "button", onclick: () => openSettings() }, "🔒 輸入密語解鎖行事曆"));
+  try { state.events = await decrypt(state.cal, pass); }
+  catch { return box.replaceChildren(h("p", { className: "empty" }, "密語不正確，請到 ⚙ 重新輸入。")); }
+  box.replaceChildren(...(state.events.length ? state.events.map(e => h("div", { className: "ev" },
+    h("time", {}, e.time),
+    h("div", {}, h("div", { className: "et" }, e.title), h("div", { className: "ec" }, [e.loc, e.cal].filter(Boolean).join(" · ")))))
+    : [h("p", { className: "cal-free" }, "今天沒有排定的行程，可以彈性運用這一天。")]));
+}
+
+/* ---------- bird of the day (Wikimedia + Wikipedia, cached per day) ---------- */
+async function commons(search, prop, extra) {
+  const p = new URLSearchParams({ action: "query", format: "json", origin: "*", generator: "search", gsrsearch: search,
+    gsrnamespace: 6, gsrlimit: 10, prop, ...extra });
+  const pages = Object.values((await getJSON(`https://commons.wikimedia.org/w/api.php?${p}`)).query?.pages || {});
+  return pages.sort((a, b) => a.index - b.index);
+}
+const credit = m => `${plain(m?.Artist?.value) || "Unknown"} · ${m?.LicenseShortName?.value || ""}`;
+async function loadBird() {
+  const d = today();
+  let b = LS.json("bird");
+  if (b?.date !== d) {
+    const [zh, sci] = BIRDS[Math.floor(Date.parse(d) / 864e5) % BIRDS.length];
+    b = { date: d, zh, sci, xc: `https://xeno-canto.org/explore?query=${encodeURIComponent(sci)}` };
+    const [img, snd, wiki] = await Promise.allSettled([
+      commons(`"${sci}" filetype:bitmap`, "imageinfo", { iiprop: "url|extmetadata|mime", iiurlwidth: 900 }),
+      commons(`"${sci}" filetype:audio`, "videoinfo", { viprop: "derivatives|extmetadata" }),
+      getJSON(`https://zh.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(zh)}`, { headers: { "Accept-Language": "zh-TW" } }),
+    ]);
+    const ii = img.value?.map(p => p.imageinfo?.[0]).find(i => i?.mime === "image/jpeg" && i.thumburl);
+    if (ii) Object.assign(b, { photo: ii.thumburl, photoPage: ii.descriptionurl, credit: credit(ii.extmetadata) });
+    const vi = snd.value?.filter(p => p.title.toLowerCase().includes(sci.toLowerCase())).map(p => p.videoinfo?.[0])
+      .find(v => v?.derivatives?.some(x => x.type === "audio/mpeg"));
+    if (vi) Object.assign(b, { audio: vi.derivatives.find(x => x.type === "audio/mpeg").src, audioCredit: credit(vi.extmetadata) });
+    b.desc = wiki.value?.extract || "";
+    if (b.photo) LS.set("bird", JSON.stringify(b)); // only cache complete lookups
+  }
+  state.bird = b;
+  const audio = b.audio && new Audio(b.audio);
+  const play = h("button", { className: "btn", type: "button" }, "▶ 播放叫聲");
+  if (audio) {
+    play.onclick = () => audio.paused ? audio.play() : (audio.pause(), audio.currentTime = 0);
+    audio.onplay = () => play.textContent = "■ 停止叫聲";
+    audio.onpause = audio.onended = () => play.textContent = "▶ 播放叫聲";
+  }
+  $("#birdBox").replaceChildren(
+    b.photo && h("figure", { className: "bird-fig" }, h("img", { src: b.photo, alt: `${b.zh}的照片`, loading: "lazy" }),
+      h("figcaption", {}, h("a", { href: b.photoPage, target: "_blank", rel: "noopener" }, `📷 ${b.credit}`))),
+    h("div", { className: "bird-name" }, b.zh), h("div", { className: "bird-sci" }, b.sci),
+    b.desc && h("p", { className: "bird-desc" }, b.desc),
+    audio ? play : h("a", { className: "btn", href: b.xc, target: "_blank", rel: "noopener" }, "↗ 到 xeno-canto 聽叫聲"));
+}
+
+/* ---------- spoken briefing ---------- */
+function briefing() {
+  const date = new Date().toLocaleDateString("zh-TW", { timeZone: "Asia/Taipei", month: "long", day: "numeric", weekday: "long" });
+  const t = [`早安，今天是${date}。`];
+  for (const w of state.wx || []) t.push(`${w.city}${w.name}目前${w.temp}度，今天${w.lo}到${w.hi}度，${wmo(w.code)}，降雨機率百分之${w.rain}。`);
+  if (state.advice) t.push(state.advice);
+  if (state.events) t.push(state.events.length ? `今天有${state.events.length}項行程：${state.events.map(e => `${e.time}，${e.title}`).join("；")}。` : "今天行事曆沒有排定行程。");
+  for (const [k, zh] of TABS) {
+    const n = state.news?.news?.[k];
+    if (n?.length) t.push(`${zh}新聞：${n.slice(0, 3).map(x => x.title).join("；")}。`);
+  }
+  if (state.bird) t.push(`今天介紹的鳥是${state.bird.zh}。`);
+  return t.join("") + "祝你有美好的一天。";
+}
+function togglePlay() {
+  const s = window.speechSynthesis, btn = $("#playBtn"), label = btn.firstElementChild;
+  if (!s) return setStatus("err", "這個瀏覽器不支援語音播報");
+  const idle = () => { btn.classList.remove("on"); label.textContent = "▶ 播放晨間簡報"; };
+  if (s.speaking) { s.cancel(); return idle(); }
+  const u = new SpeechSynthesisUtterance(briefing());
+  u.lang = "zh-TW";
+  u.voice = s.getVoices().find(v => v.lang === "zh-TW") || s.getVoices().find(v => /^zh/i.test(v.lang)) || null;
+  u.onend = u.onerror = idle;
+  s.speak(u);
+  btn.classList.add("on");
+  label.textContent = "■ 停止播報";
+}
+
+/* ---------- settings ---------- */
+function openSettings(msg = "") {
+  $("#fKey").value = LS.get("gemini_key") || "";
+  $("#fModel").value = LS.get("gemini_model") || "";
+  $("#fCal").value = LS.get("cal_pass") || "";
+  $("#setMsg").textContent = msg;
+  $("#settings").showModal();
+}
+$("#settings").addEventListener("close", () => {
+  if ($("#settings").returnValue !== "save") return;
+  const hadKey = !!LS.get("gemini_key");
+  LS.set("gemini_key", $("#fKey").value.trim());
+  LS.set("gemini_model", $("#fModel").value.trim());
+  LS.set("cal_pass", $("#fCal").value);
+  renderCal();
+  if (!hadKey && LS.get("gemini_key") && state.news?.date !== today()) refreshNews();
+  else showFreshness();
+});
+
+/* ---------- boot ---------- */
+$("#playBtn").onclick = togglePlay;
+$("#setBtn").onclick = () => openSettings();
+$("#refreshBtn").onclick = () => Promise.allSettled([loadWeather(), loadBird()]).then(refreshNews);
+function tick() {
+  const n = new Date();
+  $("#clock").textContent = n.toLocaleTimeString("zh-TW", { timeZone: "Asia/Taipei", hour12: false });
+  $("#dateLine").textContent = n.toLocaleDateString("zh-TW", { timeZone: "Asia/Taipei", year: "numeric", month: "long", day: "numeric", weekday: "long" });
+}
+tick(); setInterval(tick, 1000);
+renderNews();
+loadWeather().catch(() => $("#wxGrid").replaceChildren(h("p", { className: "empty" }, "氣象資料暫時無法取得。")));
+loadBird().catch(() => $("#birdBox").replaceChildren(h("p", { className: "empty" }, "鳥類資料暫時無法取得。")));
+loadData().then(() => {
+  // Self-update: if nothing today yet and a key is saved, fetch news right away.
+  if (state.news?.date !== today() && LS.get("gemini_key")) refreshNews();
+});
+</script>
+</body>
+</html>
