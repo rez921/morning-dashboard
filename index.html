@@ -281,7 +281,7 @@ dialog .row { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wra
       <span>到 <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> 免費產生後貼上。只存在這台裝置的瀏覽器，不會上傳。</span>
     </label>
     <label>Gemini 模型（選填）
-      <input id="fModel" autocomplete="off" spellcheck="false" placeholder="gemini-flash-latest">
+      <input id="fModel" autocomplete="off" spellcheck="false" placeholder="gemini-2.5-flash">
     </label>
     <label>行事曆密語
       <input id="fCal" type="password" autocomplete="off" placeholder="與 GitHub Secret CAL_KEY 相同">
@@ -412,7 +412,7 @@ const PROMPT = d => `今天是 ${d}（台灣時間）。請用 Google 搜尋近 
 只輸出 JSON：{"intl":[{"title":"","summary":"","source":"","url":""}],"tw":[],"kl":[]}`;
 
 async function gemini(key, prompt) {
-  const models = [...new Set([LS.get("gemini_model"), "gemini-flash-latest", "gemini-2.5-flash"].filter(Boolean))];
+  const models = [...new Set([LS.get("gemini_model"), "gemini-2.5-flash", "gemini-flash-latest"].filter(Boolean))];
   let err = "沒有可用的模型";
   for (const m of models) {
     const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(m)}:generateContent`, {
@@ -423,8 +423,8 @@ async function gemini(key, prompt) {
     if (!r.ok) {
       err = j.error?.message || `HTTP ${r.status}`;
       if (r.status === 401 || r.status === 403 || /API key/i.test(err)) throw Error("金鑰無效或尚未啟用");
-      if (r.status === 429) throw Error("今日免費額度已用完，明天再試");
-      continue; // model unavailable → try the next one
+      if (r.status === 429) err = "免費額度暫時用完，稍後再試";
+      continue; // quota hit or model unavailable → try the next one
     }
     const text = (j.candidates?.[0]?.content?.parts || []).map(p => p.text || "").join("");
     try { return JSON.parse(text.match(/\{[\s\S]*\}/)[0]); } catch { err = "回傳內容無法解析"; }

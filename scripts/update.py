@@ -4,7 +4,7 @@ Runs daily on GitHub Actions; weather and bird-of-the-day load live in the page.
 
 Env (all optional — the script degrades gracefully without them):
   GEMINI_API_KEY  picks and summarises the news (without it: top RSS headlines)
-  GEMINI_MODEL    override the model (default: gemini-flash-latest)
+  GEMINI_MODEL    override the model (default: gemini-2.5-flash, then gemini-flash-latest)
   ICAL_URLS       Google Calendar "secret iCal" URLs, comma/newline separated
   CAL_KEY         passphrase used to encrypt the calendar (required with ICAL_URLS)
 """
@@ -65,7 +65,7 @@ def gemini(prompt):
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         return {}
-    models = dict.fromkeys(m for m in (os.environ.get("GEMINI_MODEL"), "gemini-flash-latest", "gemini-2.5-flash") if m)
+    models = dict.fromkeys(m for m in (os.environ.get("GEMINI_MODEL"), "gemini-2.5-flash", "gemini-flash-latest") if m)
     for model in models:
         for tools in ([{"google_search": {}}], None):  # grounded first, plain as fallback
             body = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"temperature": 0.3}}
