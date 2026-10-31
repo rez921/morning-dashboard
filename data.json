@@ -1,102 +1,102 @@
 {
- "date": "2026-10-30",
- "updatedAt": "2026-10-30T09:17:39+08:00",
+ "date": "2026-10-31",
+ "updatedAt": "2026-10-31T08:58:35+08:00",
  "ai": true,
  "news": {
   "intl": [
    {
-    "title": "中共五中全會閉幕 政治局委員異動",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE96X2ZxRmU1NGJKUnhzaUpMNDJKcDdzZlBOb21WN0phN3dmNkIzbTBoTzNuYVh5OW12amFUZzRqc2JwRE45NTJaNklKeXlQWnptUGVMRDhFSExCUGZySnBWTml6aEpTZG_SAWxBVV95cUxPWGhsWDg5ckxzeVJRV1NIVFByYm9GYXFkSFZvMllkV2dWUmtYLUNQRFZzWmhwblR0RUlEeE55NWxKWS1WN0NoSzdRdFJmTDhCMWp0Wi1sMmtMOHVuT2ZiU2tPUnRqTnJ6OGdsb18?oc=5",
-    "source": "BBC",
-    "summary": "中共五中全會閉幕，出席委員人數較本屆初減少四分之一，顯示高層人事變動。張升民罕見增選入政治局，引發外界對其未來影響力的關注。"
+    "title": "五角大廈遭攻擊，全球震驚",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5IUjBqSmQzUU96VXhqMV93Z2FCUXlJU2YwVG9iVmVDSVNaNGRkdkk4NkhLZmxtX2R4YlA2aFFTQy1uTldzWFliS3hSdktPeTRnQXdB?oc=5",
+    "source": "東森新聞",
+    "summary": "美國五角大廈驚傳遭到攻擊，詳細情況與傷亡不明，此事件恐將引發國際局勢高度緊張。"
    },
    {
-    "title": "德日峰會聯合抗中 總理重申台海和平",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wMzhsVkRGaEpienhjWXFHd1FIRENsSnMtVEw0Uzl3SVV0R0pEUXl3WjBzS2NTeVNGdjhxNUc1ZGhJbVd5S1g0WG05MURVRFVUOFFDMnVZbTVCVWQwdzFGeGkyY3JzZ9IBa0FVX3lxTE9rYjdxZWxENUJQVVZiZmpDVjZBdHdlRFNWZW5ESjZFWGNVWDFod1p0SU9HNHhsd1lKXzRBRVhqMEVQZGd3Mkd2SFZJVFpxUTFIVWgzM1BiM2VZYjZ1bUliMlJyUHd1dVFRbkxN?oc=5",
-    "source": "自由時報",
-    "summary": "德國總理梅爾茨與日本舉行峰會，共同表態抗中，並強調聯合國憲章禁止動武原則適用於台海。此舉顯示國際社會對台海情勢的關注與立場。"
-   },
-   {
-    "title": "美俄烏三方會談將啟 俄烏證實已準備",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5aZ0JXejVmYktDYUluVlFRWG1jTzBwNEk0SEViNzdVM0p0RkswcDFMVFdtUWZJbkJ3bHRSWFl1cm1HRXE2Z29YUWJYSldzTGhH0gFWQVVfeXFMUGNxZmFkSm5TNWNrcHR3eUplYzBtYkhtdTN0X09KVzQ1a3lLX3lzX1VkNHpFalBDTWxoQjlBRl9JZHhMb1cwaE85QXJyMWFLYUowR2p1WXc?oc=5",
+    "title": "川普擬期中選舉後轟炸伊朗",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wSFp6TlJMRVUxeWw0Vm9kSmdFUGFwNEtSTnVoNXpBNmYxeGJlZGVQRnZtRFppcmNlWG5XR2VVQUUzUXFfZk9zOTlEYThJZHE4VG5R?oc=5",
     "source": "UDN",
-    "summary": "俄羅斯方面已鬆口美俄烏三方會談的時間點，烏克蘭總統澤倫斯基也證實已準備好參與。此會談有望為烏克蘭戰爭帶來和平曙光。"
+    "summary": "美媒報導，川普深信對伊朗的「最後一擊」能迫使其談判，最快可能在期中選舉隔天發動攻擊。中東戰火恐再升級，引發國際關注。"
    },
    {
-    "title": "西班牙高鐵追撞68死 台鐵高鐵急表態",
-    "url": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxQeG41RnRyMk0yc2pLaGtsME12cWxUQU96RURpekxLaWZPTFlXeEtkTTYxRWRsZUhpVFdvWERfRm1yYTJ3dzJCb3ZhUWExR1BQTnM4Ti1iakRZQl9FN2dKUC12bkVjTWRmTXNqd3lleW5DTC02NmotZlZVeFA1ejFHa09RRGdOd3plVGdSeF8tTDA2X1lVQjJtcWMyY0dKTmlLclR6aW9vNWo0c2c0RlE2WWVGb2VGWlFSMUlhTnp1WDBESmJpQ0JrMW43b29IczhyNHJRZENFdGhOZmRPZ0pBZXpLelNRNHBONEhYRzVrSl9nMzJzZE5DaTdkN1Zfdm9xUW9ISnZ3RnNPQVFIel9UcW5xMm05ZDN2bHRPSTRON3RLOGtvVU5LVlZHejhES09QTmRrbGlWdWJHLVQ2MElZdWVEcnUyVEhiSzdjeUdLS1ZFWHl2RFJSZXpsTFFfQ242ajlJaENyeTFxcnJqUVJR?oc=5",
-    "source": "Yahoo新聞",
-    "summary": "西班牙發生高鐵追撞事故，造成68人死亡。台灣高鐵與台鐵隨即發表聲明，強調台灣擁有完善的防護機制，確保類似事故不會發生。"
+    "title": "俄烏和談將登場，澤倫斯基設條件",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZNk1XeTJiOUE4azZZcUpjSi0zdEZLNFc0SF9vaWxHa2k4YTVhcnpCbE9OendKNzJFM2RsbjJCdFMzdjV2U3FfdURoSDJXcEdSOG1PLTRpMHRBZldDMERLWE9oNDBXTXJCQ2ZFbnFn?oc=5",
+    "source": "中時新聞網",
+    "summary": "美俄烏三方預計11月舉行和談，烏克蘭總統澤倫斯基堅持特定條件不讓步。和談結果將牽動戰事走向與國際局勢。"
    },
    {
-    "title": "黃仁勳身邊爆間諜疑雲 陸籍高層涉情蒐",
-    "url": "https://news.google.com/rss/articles/CBMiywNBVV95cUxNWmd4OGRWdFZVZ1FIaTJ0TkxlUi1oWVN6am9GT1d4SXBUbXVsWUx5MXFqZ0ZKWjVDMnZwVmVpdmZ6dDBhZEd6UERveWJkelBNNUdBempkbFIzaUJlY0R3dGJSblUxNjRnY2NRQXZTV192ZnhUZ21yLTRsdXc3OFZMdXUzaVBOcnp3QlJWUXB1bzRHbVlENWpBMXVHNFVPLU5LRHZHbkVnN1lpeTF0aEZqM2paSzBLV2dWeDN3UzlUenRBdkhiLTU3blZhNGZkUjFUaVhvU1RMU3VMYVZoN1c4cXJjQjR2RXNYS3NpMnNKaS1Ia2dQU1lzVGFHeFNPUC00R3hzZEl2VV9fVnJhZnJsaHJhaG40UEpDaWp3eERVblJ6Q3B6QzVsaGYzMlZBN1B2OTZDeW1xc1dnZ0h5bjA1bmgxWW94SEh6V29aOVFrbGZUSE9HUjVHZlNaUnVrUFFZblcyOC1ieXliaEZmRHIzRjhDUkwyYUQ0Tkd2RTVPVEI0NGVIR1NDWGxlSUl0UHlQRVNhcmlaRmVPbjNHbjY3ZTdnS0hPYlI1WC04Rjlja1N2VnMtdndNVUhUME5Rc24wNGpCYmNiTXNWZWM?oc=5",
-    "source": "Yahoo新聞",
-    "summary": "紐約時報報導，輝達執行長黃仁勳身邊一名陸籍女高層涉嫌情蒐，引發間諜疑雲。報導指出川普政府一年前已知情但未採取行動。"
+    "title": "中共五中全會反腐，官場變革",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1NRWdNQ3JmaWhMMGtKYlA1NERCRVlLQVlrOTZSUHlMNnhZcXlDTC1EX2xPZnJESGNzSTNiM0c1RFB6cS1NNjBRMlllMms1VGFHVzB4WXFoWEg5Um5TQS1fSHljRFVjbEXSAWxBVV95cUxOcjg2U2dyWGRFZ195UEFTYkRmV05PRkRoM1lCY3lidHQxbFdVTUxmQlQ2RlZyNVVxTTV5RVk1MTVvbmNveFQ3bFFLRmg0cG02TUo4c3lYS1BKbVVFN1hOV2RuWEtwMG9NMENRbGc?oc=5",
+    "source": "BBC",
+    "summary": "中共五中全會召開，高壓反腐常態化，引發外界對中國官場生態變化的關注。此舉恐對中國政治穩定性產生深遠影響。"
+   },
+   {
+    "title": "美期中選舉，民主黨國會奪還戰",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5hODY3WWhjSXZXRVlSSzd1N1I4QTZIcDZyeFdRdmhaaF9KZ0xoaXR5VFRPV3V1M2NCUGZtN1JNa2JPeW1nczBIbFdzRm9fUGFSaHM1LUtyNGlxVEJHSVBvRnUzejhqUdIBa0FVX3lxTFBzTVZtanVhR0EyaG05ZjJwQzZhV2YyMXpJN0RvS3ptbTZETnE1aGdSRUYzZnFUT1VaR01GS1pwdFFlS3FOMWhWeGZZM243YTR0aVVaTWEzWWpIcTFiS2dfZGFpWG9mZ1dKdndn?oc=5",
+    "source": "轉角國際udn Global",
+    "summary": "美國期中選舉進入白熱化，川普因素拖累共和黨選情，民主黨力拚國會奪還。選舉結果將影響美國內政外交走向。"
    }
   ],
   "tw": [
    {
-    "title": "煙花颱風下週恐侵台 路徑反覆需注意",
-    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ja1lkRzRCcEFrVjAtNFFZS3VkOGgyVTRPQXIweFRmVmQ1VTdWSkJfNDhzUWZucTJOM1NGZWJPdXpFbnItZjhlMWtFeHZFQ0ZkRll1eg?oc=5",
-    "source": "東森新聞",
-    "summary": "煙花颱風下週路徑預測恐「西進、北轉」反覆折返，侵台機率曝光。氣象局提醒民眾密切關注颱風動態，提早做好防颱準備。"
-   },
-   {
-    "title": "1573候選人個資外洩 選委會致歉",
-    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE40Zkp5RkdZaWdvUDdIdjZtQkpRYzF6NGZfVDk3WW40MTgzakZabXdYQUhla2xpOGIyaXFhWmlBeGk2VHNWb25id9IBTEFVX3lxTE1IMjhnZGVKVmJTVFliTW1IYjRCMVRtLUI0ZnBOQ2dUa1ozb1lXNENpX2E0a1RVbmJ6cmtDWlVNdWJxbi1PMnhyMVY0Q2M?oc=5",
-    "source": "三立新聞網SETN.com",
-    "summary": "選舉委員會因廠商疏失，導致1573位候選人的身分證字號外洩。選委會主委游盈隆已公開鞠躬道歉，承諾將加強資安管理。"
-   },
-   {
-    "title": "桃園市議員候選人涉賄選 檢調約談",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9mWWxwYlNUVWR0ZTJ0blN3Y2p2elQ0RVJkekxfa3BSMzlqTndSRUJOWEVFbWtXWTNBeEd2TFNZNUw5RGI4RXp6Mi11RnhnZFd10gFWQVVfeXFMT2dyWlZzUWN2N3dBTDFjLTM2czdvVExJWDRXT0RoWl9MVFN6RXQzNmQzdTBGQ1NWV1RKaFJ6d1l2TlNiRERzS3JkVGhDeEQyN1RJeHMwNmc?oc=5",
+    "title": "0-18歲月領5千，總統提新政",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBDbzl1Vld2eS1HdHJhTjkyUkIxTzBIUTBNUmlKWDBHbGlieWZUTHVxWEdFRjlMdXkySzJsb0c1TmpWTV94U25EbmZkSVJfeV9o0gFWQVVfeXFMUDV4WU9raGdzUG5SVFF1VFJtVlA5dnIyUHRXdUZPQkFwbVpQb3hQZ3hYY184SHBtS0NPSllPQUlPcXlWakJNTV9BZUNjZjh6bTEzUWVBVlE?oc=5",
     "source": "UDN",
-    "summary": "立委萬美玲之子、桃園市議員候選人佀廣洋疑涉賄選，遭檢調搜索約談。此案凸顯選舉期間賄選查察的重要性，維護選舉公正性。"
+    "summary": "賴總統宣布，若立法院預算審查通過，明年起0到18歲國民每月可領5,000元。此項社會福利政策將直接影響廣大年輕家庭。"
    },
    {
-    "title": "蔣萬安夫妻攬功爭議 輝達內部打臉",
-    "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxPaW9ZWTJqR2NqQ1g0QUZIcVN5WlB4ZVhsZU9paTFweFZyTmZESVJQMzhUZXBVeVU0SEtETENRcG1vVHZJNURyaE5jMEdnelpCY20wcWNhajRMZ3hKeU9YNEZSNTNaRW1XYjkzVEtqZXI4QW90Ty0yQ0Nfb3loT1I0anJpbENCNF9hcUhVazhEbF9FRURNMFloMDNFSDhSTDl0ZFJTcV96aU9GR3FXT3dkUkVwQ21VblV4SnZ0Wm0yTDNzVUFpMGFUYTFzMkdvTl9od1NWaXVIeGRjTlE1ZzdtSjZydXJfcDFkb3pMMHotVU5UQ3ZjQnpqUGlHQjJmY2FyNUlzUjlWZTk2d3plemVtRkpyREtaS2ZKaHVhTDM0MU5ZZXZkaE9QSzVHUlpjYTN6TThzb20wWGhhb0NyV1VDRWZrVXd1Sks2V1NBWm5SVllmcHktUUxxTTBNVHV5WVV1OVF6UHVMQVBiVC1kSV83SVlRTV9mZUl0YVp3RXpiS2VrZlR5cUFvY25FYmZ0Yll3cUR5VWtFc2IwejFpbkstQVBITjRyUWhN?oc=5",
+    "title": "美軍示警中共2027年犯台",
+    "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxPU3pzemppMW9pZkNvNjlmSkhxLXlQMTN1aXg5RFQyS3VsY3lTeWU5U3IxNC1xUFVZcjRsTUluRVhmdGNOSnNnU19oZXNQYjRVTlMxZlMzLWZLYVdQVUFBZWwyRW9ZMU9PT3BqMzBxcFBtSzhNUEFhRTVURjBsV0NUOHM3eWtyUDdfZnVCZkpqUHNLNkVnRlE0cHFXWWo1S3QyLU44enRXclBKM3JrWjZwMU1RUldUTXo2VDhZRlYybm5hRDRJY2U4WGZua1lRellWZ1NlcUg2azJFeWVtUmtibG92WXRJNVVMS1AtWS05bVc4U3ktSGFmTmxBcGxGQm9xZ09hWklPbGlHb2dwTE05V3ZjaEh0NDNxOTRfdEZlY2xUbnZwRFE1NWpFU0tvdEQ2RlBWNDhmNVlmOV9HQVVFeWJmaHlaSlZJOTRzR29jVnRHbVFHaUd1QUQ0RmFyczVBTGdDYQ?oc=5",
     "source": "Yahoo新聞",
-    "summary": "台北市長蔣萬安妻子石舫亘稱直接聯繫黃仁勳，引發攬功爭議。輝達內部人士對此說法表示「荒謬」，讓事件持續延燒。"
+    "summary": "美軍再次示警中共可能於2027年犯台，學者分析福建省尚未具備「戰時小內閣」機能。國安情勢持續受關注。"
    },
    {
-    "title": "巴基斯坦關閉領空 影響台灣航班",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBYRGhCTlI3cEk0VUFEX2dGQ0tpbWJZMjM5dnJRdEt6MVVZUUpfS0pZVGhzWURiOVpMZ1doOEZpaXZCdnhjZkRtd0R2MUhxLVc1Mk1RM0tMRnBfcTlQcGJn?oc=5",
-    "source": "中央社 CNA",
-    "summary": "彭博社報導，巴基斯坦為支持一中政策，對台灣航空公司關閉領空。此舉可能影響台灣往返歐洲的航班，並凸顯國際政治對飛航的影響。"
+    "title": "台北市長辯論登場，選情白熱化",
+    "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxQeG5NS3NIajBGY25BV05UQXo3RlNSSTAxdkJvN29wdTRaN3hXLURtVVNJRUFIMmg3YkxCZ1RvWjFwQmRFZS1aXzduZXdRa05QYnU3VU9qR2N4LW5RM18ydS1BR201REE2YnZrZjUtOGZWWXlYRHJkZnVSUVBxQXM5WVdGRk9ia3QzS0JhM3ZZMURPa0toQ3JUOTY1X0lnUno3WE15WGkwS0FlUGlmQ2JmYUkySkhGNlF1TlBuckI0ZG5qVFdWSm5GaXhUTnBMcHBDQnhOWHRMNkVLSlplUjI5cUg2V1BrU3VJZHdJbXg1eWxiaERSbmEzOW5NUjNScWw3SmdyTkpLXzBCQjc4V2k2TmNiem12V0tzZ3JYOU5qa1FIWWx6YmR3ZHBieFR2d0gxRWZVal8wbUkzdXljNXFmS1Y4bzlxRXJGR2RKXzBYNTdkS2VuemVtTFdZeXIzZjVBMFMxVWo5TkVLVXp2UlJHaElBTE91anZ2Q21rakFUdk8xVWw4eTZjTUZPMXFXbHFRR3ZiWXNVR3AwS2pWenc?oc=5",
+    "source": "Yahoo新聞",
+    "summary": "台北市長辯論今日登場，各候選人積極攻防，選情進入白熱化階段。辯論表現將是影響選民意向的關鍵。"
+   },
+   {
+    "title": "立院三讀毒駕累犯最重可判死",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9fOE1UT3VqNm5ITjhEdEJRNV9KMDRoaE9ZVDdWMWdFSXZwNFJ2UmZMRThuNDVZZEJCaXpnNmdHVHdSWUwxLTc2ZlpMMFdsVkV60gFWQVVfeXFMTklQMTZpczhGZGloVXBtRjVzNUdZOHFpQnF4NW14QU5PdEpock51UDNQRXIzWlBaYWtKODA1Tmp4dGZqUmN3T1ZuT213ZDlhN2d2cG56U0E?oc=5",
+    "source": "UDN",
+    "summary": "立法院三讀通過毒駕累犯最重可判死刑，引發家屬質疑。此修法旨在遏止毒駕行為，但其執行與社會影響仍待觀察。"
+   },
+   {
+    "title": "巴基斯坦拒台航班，美方關切",
+    "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxNT3dSV1VKRFF2WTkwX25xLVBjbkdJYV9DRGJrV3ZNMGhYWjY3azZFbEZXR05WMjctNUZDUnhRME5DblVWTkM5ekxfWlUzZHdJcU9MTWZOdnlxRFlFSURLMFFFTUswTFNrQ0hOdUpfZUExQ1RGaENuNmgxVXd3cUVGek8yZ0pHN21TMzdGQlhjcDMxNDZqYWxXd3FNd09IOFpqSm5Nc0VnMnp4SGJRZjV1ZnFRemFsdGw0MWV2SkdGX1MwYWgwa1k3TlhUbWUwSndBNHZYb1RMWEI3RlplMVNHaUJmQ3R6WnZZRDVhRmVrQlZQTHZxSzdOVkdhSUhya1dtU3l0aUN1NHhacGRfYjkwWGE0cG15TGNBaEpMX3Z6X2VqalVLa2NHRDYzWkV2WkZyUzJQVVFyMGdOZk9ibmFxc0JzWTI4VnAxc1QydE4xc1ZMQl94RW00Qkk5Z0x1aHNK?oc=5",
+    "source": "Yahoo新聞",
+    "summary": "巴基斯坦一度拒絕華航、長榮飛越領空，引發國際飛安問題。美國對此表達關切，顯示此事件已提升至國際層級。"
    }
   ],
   "kl": [
    {
-    "title": "薔琵颱風來襲 基隆市府啟動防颱整備",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5SVEhadUhhbjFEMUx0aXprZmFyc0Z4ZUpoejNLazhWajV2bGpwVk1xTVJJUmV6OTIyRzlCLVoxUlIwRnFSVE14MzNhWkZsc0FpWWl1NUVJbldYYXVvZ3c?oc=5",
+    "title": "基隆首創複合式防災，防汛整備",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAxak1oUGN3Zkl4T2RJVWhxRDNGSmZSY2p0SEJBRlh4bGU0clAzaTZXaEVjUm1kYmNzeUVzRlpFZkNDYkpyQ19DT2ZKTmhwbS1iTzVMSVBzeXpjY2NyWXdMWGxhS28zZw?oc=5",
     "source": "基隆市政府",
-    "summary": "強烈颱風「薔琵」來勢洶洶，基隆市長謝國樑率市府團隊全面啟動防颱整備工作。市府呼籲市民提高警覺，共同防範颱風可能帶來的災害。"
+    "summary": "基隆市首創「複合式立體防災」機制，市長謝國樑於沙德爾颱風前夕視察大武崙溪防汛整備。此舉強化基隆面對颱風災害的應變能力。"
    },
    {
-    "title": "安和一街停車場開工 活化公有地增車位",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE45ZUI1aXluQWU4dV81Y0tPc2JvT0R5T3QxZWt2N3dQR01oSWNmaDZWc3J3bTBZM3FTTkFUNlk2VzByMUEzZmpZcndzTHhPWldtWEh4THBmc013bnYyRFE?oc=5",
-    "source": "基隆市政府",
-    "summary": "安和一街271巷停車場正式開工，基隆市長謝國樑表示市府持續推動公有土地活化。此計畫將有效增加停車空間，改善當地交通問題。"
+    "title": "謝國樑遭疑公帑養政治班底",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zZVJURW0zbTBxOS1JcjhwMUdVc24yU0NRM0t1aVo1Nm9rSG1nWWpMU0FObkJTdF9JUFByVkpSdFZXWFhlaGtpTDFTQW45QWtFRmlORF9GX09TeXfSAWBBVV95cUxPTFZFYUVJaXNLLWVhTkJwNlRPd3NCeFM0V24yekxvUXB3akkzakNPSE43OHdRWHhaMnpoRDhaVkJWMlRRRTV5T2JCbGQ5STJ3UjJ4SmpvYTdORkJnWlVtaTI?oc=5",
+    "source": "鏡週刊Mirror Media",
+    "summary": "市長謝國樑被質疑利用公帑培養政治班底，支持前祕書參選議員。此事件引發外界對市府資源運用的關注與討論。"
    },
    {
-    "title": "基隆市府改革議員建議案 預算公開透明",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBXQldxd08ySVNDb3Y2OTJUMTJFak01N1NvR0xpeVBLSkI2Y0FXV0hQcllwbG5FWm54ZDVDSGRsMVpYejNHbjJQREpIZUp0Vm5leHdrVVdaTUtOaGhmUmJZWXF0Zw?oc=5",
+    "title": "基隆中正義三路都更啟動",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE00VHAzd0J5TXNKc0N5anRqOF9jUGE1YU83M0ZvUWt1MEY3S0owYncxWVZHemtzTk9YY1pYbFZXZU5hMkFLbU53VHlzWm5VbG8xMm9BY3NOTUJaUEZ3SFE?oc=5",
     "source": "基隆市政府",
-    "summary": "基隆市府推動議員地方建議案制度改革，強調預算公開透明、專業審查與公平配置。此舉旨在提升議政效率與市民對預算運用的信任。"
+    "summary": "基隆中正義三路公辦都更案啟動招商，預計創造31億元開發量能。此案將打造基隆都心新核心，促進城市發展。"
    },
    {
-    "title": "基隆搜救隊挑戰NAP認證 副市長打氣",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NcW45cm0ydWhBQXlyUW9xVkNnSDdnVXF1eG5NQU5xOTVkbEJUSUN1V3lXdHpLbFh1TndpOHNJdkQxbkNBY0FFdkNpcExWMHNrV3VibHBMbnhSamRxd1E?oc=5",
-    "source": "基隆市政府",
-    "summary": "基隆特種搜救隊正挑戰NAP中型隊伍認證，副市長方定安特別赴暖暖分隊加油打氣。此認證將提升搜救隊專業能力，強化城市災害應變。"
+    "title": "基隆啟用全台首座身障創新基地",
+    "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE04UEZ6Zko2TmRfaVN5TzlGN2hUZl95N2wycUdLOF9ZQmpram5PbjRKV05Cb0dhQ0JXbmQ3cDhKSnR3UQ?oc=5",
+    "source": "墨新聞-MORE News",
+    "summary": "基隆市啟用全台首座身障創新基地，市長謝國樑致力打造有愛城市。此基地將提供身障者更多元的支持與服務。"
    },
    {
-    "title": "許淑華訪基隆交流 謝國樑談觀光發展",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBSUEFncXI1M21CZkRGMXYyX3dkSW5sLVFYNGJSRUtzOVZWeEQyQnNtT3NpX0VRVzlkbEVkRklzbU9kM3BqU0wtWG16cE5Vc29MMm5oRVl0T2dEYU9YNDVoQWxDVQ?oc=5",
-    "source": "基隆市政府",
-    "summary": "南投縣長許淑華訪問基隆，與市長謝國樑交流城市治理經驗。兩人搭乘雙層觀光巴士，共同探討基隆觀光發展的潛力與方向。"
+    "title": "基隆市長辯論11/10登場",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBDYlBsREY3WHFuaXNjOG5md1dVNzN2dDdKVE5aWnl5cEdoOVFkZ2dPYWpoR1ZpMnlQOXNlLTY4R0dJejN6eWJJOHJCbThYSHUzbmNaSTNWVQ?oc=5",
+    "source": "台視新聞網",
+    "summary": "基隆市長首場辯論會將於11月10日中午12時舉行，謝國樑與童子瑋將正面交鋒。這將是選前重要的政見闡述與攻防平台。"
    }
   ]
  }
