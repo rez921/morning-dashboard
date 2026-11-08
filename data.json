@@ -1,102 +1,102 @@
 {
- "date": "2026-11-07",
- "updatedAt": "2026-11-07T09:05:55+08:00",
- "ai": true,
+ "date": "2026-11-08",
+ "updatedAt": "2026-11-08T08:52:42+08:00",
+ "ai": false,
  "news": {
   "intl": [
    {
-    "title": "美中期選舉共和黨失兩院",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBxQWZNZDloZ2twWHYydTd3NzRoU3k0aGtVN2dCbnRvejRIa1lRX0pvejZmY1ZKXzBsaUtWQmVhRU4zaEVEam80VWhMNmxKTW91cjYydXpMZXRYRVZhdm8tMUV4MDhWRFHSAWxBVV95cUxPRXFVTHg0Tng3VUdJQVhFX29FUzQtdjdiSDctc3BGcnowcHNValM5OTY3VjJxcXZBOXFJVDZ1MHplN3hnWFZvQTlLVG9waEdQR3YySWg2bTQ0VzNRT3UxUnVteU5kbGlYUS1JYnE?oc=5",
-    "source": "BBC",
-    "summary": "美國中期選舉結果出爐，共和黨在參眾兩院皆失利，引發外界對美國對華政策與對台軍售走向的關注。分析指出，未來美國外交政策可能面臨調整。"
-   },
-   {
-    "title": "民主黨議員籲停AI開發",
-    "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxNNVd5ZVdaY2ZLalZqWVFxQjhXOFdKWnhsTWJFZi05TnJZd3MwQzhWblJiallPMXhUUHZpaFcwOXgtaDY4RFJsd3Z6eEpEN2c4blNqTVExaHNRRnAyY0QwRVZYNzF2ZVBKUkNZNHR2dVRsMEZFc3lrZG5VMzNLUTJ4WklmRlVycTdzSUxZejU5M1VxRWJJYzIzQ201aGNFSExjZ1RZVzhFUklXSUtEbTlia25rU19qZkU5XzRTSEE0d0VlOFVtTDlRZjZnMmtxcGtVZld0YkRYaXlrd0EteGVlbFZFS00zaWJUWTVOeHhuRHBEUFRsaHpLZHJOT2M3WU1kRTB5S2J5ckw1cFg3eXZINEh0akp5VlU3VnR4MEtVdDJpMTBYR1BMT0hWZnlBQkswUGVGUDQwTnFHOU1TN3ZoVnZPN0xlWTM0MnpiNDJJVklydjBJR010NUdNOXhJQjhrNEE?oc=5",
-    "source": "Yahoo新聞",
-    "summary": "民主黨眾議員呼籲停止AI開發，引發與科技巨頭馬斯克的隔空交火。此議題凸顯AI技術發展的倫理與安全爭議，各界對其未來走向意見分歧。"
-   },
-   {
-    "title": "伊朗宣稱擊落美軍無人機",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ueDZEMVpES1Zpdm9HeHF1V21VTEJhdVZFSHZWZ3RnZk5vZ0w4SXJlWEdFdTl1X1NZSXBuYTZsX2xCbXI1OEhLTWZyV1lWZUFyZDB1cm9Nb1BxY3h2Z3BrbklxUTF1YWpYaTNIbHln?oc=5",
-    "source": "中時新聞網",
-    "summary": "伊朗革命衛隊宣稱擊落一架美軍MQ-1無人機，使中東局勢再度升溫。美國防部前高官表示，華府目前不傾向動武，但事件恐加劇區域緊張。"
-   },
-   {
-    "title": "川普預言俄烏戰爭將結束",
-    "url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNRnpLWmprT0RGMUhud1R6Ymk5cWN1OHpEVDlaeVhaUDNVSlhpTHBrR0lrMElybGhGdGhHWTAtR0xZRTd3ZVVfVms0SWQ3WnpZMGNWSUtHZXI2T3l5UWVCR19yTXJIa01Zc29nc0I3ckNvYmxHenYxdXRHQVBiX3lWcWo5QnI0Y092aXJNYWRlTnZuNFBUa19HdUh3Q3BHcUlXT2l2WGk5NFRwTHhTUmRTOHVZNzdvX1J1NW1PM2tHTElXQVJVUmhfalQwNUVKa2pNei0zLXY0NlRUbHpQM3lWQkg3VGkzRFp0Q1B3NWxtVm5MWUhjSGpDSzdKNTJpNnZJNXE3bjM4amhuRHRETkViNzh2dGZYRndqc1ZwVlVoa0RZVjlQWXFsdnhhMXRzU21JNTFGV3FqRDZ6YWhkR0J4eHJKU1BERVdXdnEtYUVzX3hERnJnajVmeHdhVlY?oc=5",
-    "source": "Yahoo新聞",
-    "summary": "川普聲稱美國與俄羅斯將達成重大協議，預期俄烏戰爭很快會結束。此言論引發國際社會高度關注，但具體細節與可行性仍待觀察。"
-   },
-   {
-    "title": "美國警告中國履行貿易協議",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9YcUo1YzJ4WWhBUWZpR2xfTzh4bnJwZ0RoZkd5S09tWEJaUlR0WDBVd1FlckxRUUM1eFhPVTI4LVlaWEh0SnVpYkpTX3ZMSmdD0gFWQVVfeXFMTmJsck9FYy1Beng3d0Z2ZlY1SDhmc2M0VUFwdU04RHJXMW9FcTM0WUhYaHk3YWJ4N09sblhIdGxuR1A2NjdrTDQ3ekRnazZ5WDFudkQ2SHc?oc=5",
+    "title": "影/波蘭槍擊恐攻6死15傷！民眾逃警局趴滿地警開6槍制伏凶嫌畫面曝| 國際焦點",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE94eWo0TXBMRngtZ3A3SUFtQ0h6NTlpaXdJTFNVdVRpX1dSNUM2aE5NTl8zSFI1X2ZNaEFyMHFfQ3FjWXpCZ2lrbzZiT2tFUTdj?oc=5",
     "source": "UDN",
-    "summary": "英國媒體報導，美國已警告中國需立即履行釜山貿易協議，否則貿易休戰恐生變。此舉顯示美中貿易關係仍充滿變數，可能影響全球經濟。"
+    "summary": ""
+   },
+   {
+    "title": "中國外送員墨爾本遭刺死！疑見人動腳踏車上前質問 51歲流浪漢涉重嫌被捕",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPLUk0Q1lKVENDNFJhc3d1Q2VBN05JdVM4a0ZSdHZOME8tWnc1WlpndkdRdV9kZ1A2QmNCcmFYUEpTQVUzRUZJY3RzUXA0RVNQWlJabERaMzdiWURkOGFiVV8wZVQ5OWROdUJtcFBQMkd5Q3U0aU1WZU1hMkNOMnRjSEdKMjd3TjA4a0E?oc=5",
+    "source": "壹蘋新聞網",
+    "summary": ""
+   },
+   {
+    "title": "以色列大選也變天！ 「他」獲過半民代支持 將取代納坦雅胡成新總理",
+    "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxPNDA0YWxvY0Y2Z0N2OHlxbnlrc0JBWW12cmVkQTl4b0dCNFR4TnVMZHlHcFltYzJ6R0pzQ3B2OXNURGFfZWV5czI0WHo0Z3hvNzN6VlBDSGhhTkNnNzVOd1cwNTZEUlBWM1BlRTlRZnMxT080N25yaWRvOUt1M0h2ZEl1YXVCMWZRQ1UyNGdxb3BOcHhxcEFzN3lwTVRvcGVZYV90aEdZMm1HX1ZIS2trSVFYaWllRlhHaTBfS25qdF90R05KOERkYzlzSUdzdzA0cnZhb19sRjdMWmJzY0lwNlBnZFAwX21xd3RIMnZ1RldVZlZKMmE2UlBpanhCNEpmVnFXTXRTYXRwQVItb1NyUGRrZFZnWkw3cE5qcmNFX0piUUNlLXh5a1pVMUJtX284UkJLN1ROajlpdmZUZXdHNk1aSk1pTEpSaXk4dWFwMWo0b0hKQ0w5dmZyb2ZkTG11VWlaYVFrQWd1dGZINTBYbk81eVpjY1NSbDJzbzc3YVpYZnZ4V3NvMHhERTd0ZVNmTGtGbVZfeUlKZUE?oc=5",
+    "source": "Yahoo新聞",
+    "summary": ""
+   },
+   {
+    "title": "川習會前夕美中經貿官員視訊交鋒 中「嚴正關切」調降三百億美元關稅",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9GVm9PRDZ1dnFGSWpSZm9tdGdhVnpQOG1WS1hYYlVuT0p6c3doWjNnY2ppc181TTh2SEVWX1I0VkdDMlZydXF5UmRxemY5VEE10gFWQVVfeXFMT0RYRHdpaWg0UTM5Vk41aGlUb0lFWHh3aDAyNlB2cF9vUjl5S1NlWTJHT2N4dTZtWGtQTXZwZWNFeE9USUlGMmV4NGtHc1FPeEwwX2RVNUE?oc=5",
+    "source": "UDN",
+    "summary": ""
+   },
+   {
+    "title": "「那是她的治療費」！社長砸420萬整形養小三 妻查帳才發現更大的黑洞",
+    "url": "https://news.google.com/rss/articles/CBMingNBVV95cUxOallBMkJxOUQ3M3BGc1lfNlpMVnVHQV85b2RJTDFXWjZFcnZUaklqUUM2Zk50dktaVkUzenA3N3JvZDFHbjZINUc0MUM3WF9teXJzNFFKaC12dmNzNkNJcC1oSEs4ZC0zZlJQMVM3Ti1sTjhfeGJVbDdvMU9WUTdYbGhUZlFOZW12UjJ0VFBiM1JrZTNMUHhUQW11b1hYTExsT2xGZi15aWNETW4zUExVVnRkNV9yWEYwWHpPM1VuRjNBd0hrMUJqVllaMWNuSENkR2ExcWZMSmtTRHhBN1FZZmNQVy1MNXBjMG1lR1Z0bEFUTl9aU1hvbWN0ZUxheDN3N3ZMdGRET1BYWjF3TlpDRmFaS0JnWlJ5ZndUbWlWM1o3N3lzZlRnWnNheVJNeWttY0phN1hEV0UwcmxvU0hmUnJPOEZfQmlFWTZVenNCSURBdHpPZ3JNWE1PelNKSHJZcklYVWZrRFFXVURIT2t1TDQ0Q2ItbnVCdUt3YXpTeXA2NmlMYV83UWtCeDNBaDY0MnYwNUdFSnYxMnNsSFE?oc=5",
+    "source": "Yahoo新聞",
+    "summary": ""
    }
   ],
   "tw": [
    {
-    "title": "高金素梅涉共諜案遭起訴",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ITjNyRnVMckRyWUtqWXNKemtHdkYxRGJOUWpRX0ZqVEpURDdXeFlrenpBRTdDemhXdkFsX1ZHdm92eVc3NjVvcEZvWFNYejRibTY4d3J3WnVoR2tsSFE4?oc=5",
-    "source": "中央社 CNA",
-    "summary": "立委高金素梅因涉嫌共諜案，遭高檢署依國安法等罪名起訴，並求刑14年。此案引發政壇震撼，對國家安全與兩岸關係投下變數。"
-   },
-   {
-    "title": "老農津貼調增案政院回應",
-    "url": "https://news.google.com/rss/articles/CBMioANBVV95cUxQSkpRVjhCeWRuNVo2SURlSWNnblk0d3dUOFZ0eXpwc2FvMlBYWjlFYTFiYURuVko3cG0wX0hwZWdQLV9od1h6OW5JS2V1ay1uWk1ZZGcwLWhBdWUzVzlWblp0TXc0VmZqYUVMRWxtSVE5OURUaVc3d1BiS3VMeTNXcEpHUDg4NG9Bc1FuTHl3d004X3VRVEVnNEYyaVVzRXNlWl93Z2RFUkZhNXZHRUJZTmFTcFpVNU5YYzlSS1RaT2NIcnJoSUZfM2otdFFjNUYyYVNZRk1WUm5FZ2FxN3FUTk1GSHVDUTltWEsxSWJtc1dRVV9vVkk0aFRyWHR0bTNuLUxqUVd3U1pKR2N5T3AwMnNxWDljOGFLVjJxNVZDUmdWWHNqQTZlMU83QktmWEJxMThIel9BVXVVR0duWUp2RGptaU5ld1lpU1l3R1VQb0pPcWZrSWNVblJVVjdQV2N2V29ueFRRWjNTLXdLUGw5Y0R4OVo1TWJnM2xxQ0Z5RGlZU0Z4T2h6cGozODhCNmhtZVhIMGdEUUc1dVVDODR3aQ?oc=5",
-    "source": "Yahoo新聞",
-    "summary": "立法院通過老農津貼調增至1萬5千元，行政院預告將「合法合憲妥善因應」，未明確表示是否副署。此案關乎廣大農民權益，引發社會關注。"
-   },
-   {
-    "title": "查帕卡颱風恐轉中颱",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5Nc0J4LVhXeDhpRUcxOGwzV1E4TDlOZ3JtbDh6X1piY0c2WHVQTjRKRWo1QmRvNEhJQ3BWaHZRMWE1UEwwZ0lGdXhWMzgtUHo00gFWQVVfeXFMTmhmRHdDcjc5LVpqZGJqMDRZM21rWWZxbzRldDVuU3hYRU5RLUgwTGx5amFWYXVGMHBTMFRHbXBpNTFsb3ZLUVMxbEVnMmhoUFB3VTdMM0E?oc=5",
-    "source": "UDN",
-    "summary": "查帕卡颱風最快今日生成，有望增強為中度颱風。氣象專家指出，其路徑可能影響台灣及日本，提醒民眾與相關單位提早做好防颱準備。"
-   },
-   {
-    "title": "蔣萬安選情告急「五五波」",
-    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBTVUNYa3k3RW0yNUJ5Qlh5eTN0OVhULU1GSE5JbldnNFBRT1lOekwyUUZORUJQVGlPbjduVEEyMEp1LVhacDdIUtIBTEFVX3lxTE1CWWU4djdvcE5jYTItaVByUXdpdXUzMkp6OTlBR0NBeDNSX3JJRmhMc3FOUzdBTUhoREU2TnpLd19YNExYUF9iaklYUGM?oc=5",
+    "title": "蕭美琴送「魯夫草帽+台灣航海圖」　期許沈伯洋成為台北市民的船長",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8tMHVUSllQc2pPUExoN2JOY0xUVGJoUDNaNWZPbGFwdEh5QWFNVk5jR2U0R0tHZzZWbktTMUpHVFM5WmdWRkRpTNIBTEFVX3lxTE80OGdPeHBRRXpoZUdyampRVmw2Q195TUZuVDlzUlFwbk1hRGNJcllQRXRLcE55TTgxT2ZWaG5CNno3MGtNdXdEbW9nMGY?oc=5",
     "source": "三立新聞網SETN.com",
-    "summary": "國民黨立委羅智強指出，蔣萬安的選情「五五波」，情況非常兇險。他坦言「洋流很熱」，顯示對手沈伯洋聲勢看漲，選戰進入白熱化階段。"
+    "summary": ""
    },
    {
-    "title": "外交部關閉巴紐駐處",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5SVzdKclpkUlctWVNuOExlZ2t5Y1dud0d0V2h3N08xdDg3VGhVbXZGRFh4Vi1fQVVLTFVZYVRvbWFBOWFDZGpIUEtlbHZGUEJsOXRhRVlFTUkyZUFoM0Vj?oc=5",
-    "source": "中央社 CNA",
-    "summary": "外交部宣布，基於國家尊嚴，將關閉駐巴布亞紐幾內亞代表處並撤回所有派駐人員。此舉顯示台灣在國際外交上面臨挑戰，並捍衛國家主權。"
+    "title": "藍白大咖齊聚旗山挺柯志恩 主辦方稱2萬人到場、蔣萬安喊北高連線",
+    "url": "https://news.google.com/rss/articles/CBMipwNBVV95cUxPX1JKWGlkdkVnZ0pHMzBmdkw5cEdJSlZYdzJjVkxrTzVKWDBIQ3NRWE1idkpwY1VuNkc2bXFNWXdaNDBTQzE4Wk5PQ3FfcnNINm1WcVlESXZUNG1sQ201OXFQYTlablczWTBybENwc3JST1RVeFhaMDhJbnEya0FFMHlJN2RHTllSNXZ1YzNWc1p3amtTTHNjeFVmdUdpTUh5dXFYRTBPemlGeHpQY3YxRWFDcl9yR1huc0YtOHNlai1MR2l0dHZpQ1FsUEhYbnVFd09fUktiUkU1MWhzZFcxR2tUMjBfSVJnTEh2WGZmb2F3ajJnYU5pT0VoQWdGTng5LWotdGZKTWV0STdjbG9jbDFWMmQwLU1ybElzZVgyY3NLS3ZjcnVZZTlyQ1pZSVFkQUlOdFVvV3VUMzlCQ0tVZldrYk54bmZsb0xLdnJzSGNGQ2N6NkFRaEwzSVFRbDB4NmQ0N09NUTRUa2NsZmNwTVdUd2xUSHlPNkZHTU1JMkt1Rzh1T19zT256WFlNQ09oLUJGblhpZHRNUDBKRXd4UmJMR3hQVEU?oc=5",
+    "source": "Yahoo新聞",
+    "summary": ""
+   },
+   {
+    "title": "趙少康嗆「開除就開除」要替邱臣遠站台 國民黨回應了",
+    "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPTHJRT0VjYk12VE9FZ3JIMWNxWnVhOEItclFTZ0cwc3htNUtMYmt0cmdEMS1SNWRKWl9MWTVCbW85SmYwd1l1ZkdMbERnSG5Rc1lpQWN0eGFtSHNVdkFFSHg0MGdpeGJmUnpzY0VfY0xBc2l0bFg1VzBUVHVJbHlhaGVLMGxEeFBqYkZQQVRIc1BDQWtHT2JLamt6bnRVeWxpUGw1R3pmTVoxb0xyaXpKSnBKMk8wdnAycWJjMmV0VTYwNTYyNTVvRTVXQkN5T0pfeVVudHNfdzZDeFhGdTV5eVRkNDQ0QXh3STZVLVJ2TGJKcWNlVUVoenc3dzhEb2RwNHM5dDlhaU9SQ3d4cWVZS2EtQmQtWEo0SE1OckhVTkFKUUJ5ODQ0Njh6NThuSUJhWTZ6MDJuMG51NlFPcmdlc2h6cGhqdDBIQ1RrZk03VmFJWWtxUVNWaWxIbFNJUDA?oc=5",
+    "source": "Yahoo新聞",
+    "summary": ""
+   },
+   {
+    "title": "11月8日晚起東北季風增強 10日低溫探16度",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5pN2RpUXFIU3hBVjRtUTRsSTRuUnNCNTNZdTBaOXE0VkY1ZDcwandaNDRZaHhhcVNUdklJOVhMZVJYYTc2T3BJRFJsSlIxOXBy?oc=5",
+    "source": "UDN",
+    "summary": ""
+   },
+   {
+    "title": "老福修法…批立院打亂施政 卓揆又喊協商",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9sQ1dHcXFkWE1Mb01HTlQ4Q1N5Y2FVZkNoOVpSWElPaGRXY2JQT2ZFNlNwTXAtUDFka2dKOVdqZF96VktJYUp2V3VzUEFSVEdt0gFWQVVfeXFMTzd2eVdjeHR5RnZQT3pPUEp0SnBHaEpSX3VGMXZsdl9xNGxEeDQwUlcySnBybFVnaVZka0ZQVWx2dlp1UlU1aFdsaUx1MzZZYWtWb09BZ0E?oc=5",
+    "source": "UDN",
+    "summary": ""
    }
   ],
   "kl": [
    {
-    "title": "基隆市長民調謝童僅差0.5%",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4tMWc0X0ZzYjZLYkRGVE1SMXJreDNtM256VFlVZERCTVpWWFczZ3FCWWpMTUcxZXA3M3dibGNCUGZrcWVRMU5rVGd0bmkwUEZYUjE2WnJ0YVhrRlk?oc=5",
-    "source": "Newtalk新聞",
-    "summary": "最新基隆市長民調顯示，現任市長謝國樑與對手童子瑋僅差距0.5個百分點，選情呈現膠著。雙方陣營皆已對此民調結果做出最新回應，選戰白熱化。"
-   },
-   {
-    "title": "沙德爾颱風逼近基隆嚴防",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5Da285TnJXWWh1RkdZNkxRVUxWeEZBX01RS1M3UXBMUEJEY0lJVlhXV3YxZTdRdjJKR2gxQnBWbTJRNWxQbHBQTThhdlVkOW5SamFLWHlpSTBLNGlnTHRYeWx3SGRLZw?oc=5",
+    "title": "基隆2030智慧海洋城市願景發表 謝國樑：三年施政成果接軌下一個十年",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9xZFlHbUxuRExDV3BHcjg3VUVjRkFVbkRhX09pQVFneG44VHNpcmVnRnRNdnJ2eFRKWmctRGFCeDBrMDhTQkVnOF9SU2ItMGFqNTRIMzJvY2k3N1AtZ0lkWE1sMFQ0UQ?oc=5",
     "source": "基隆市政府",
-    "summary": "沙德爾颱風來勢洶洶，謝國樑市長親自主持防颱整備會議，並視察水溝清淤狀況。他要求各單位「上緊發條」全力戒備，確保市民生命財產安全。"
+    "summary": ""
    },
    {
-    "title": "全台首座身障創新基地落腳基隆",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1nQklNdmlWNjRXVWdPVUxqT3B6WGZLM0xralVyYVlQLS11YUg0LW9McklpV0cxX1VsVEhyNDJ3R2dvVTYxZk9KVEswYlVuc3lVajRyZFA2MEJXdmk3Y3c?oc=5",
-    "source": "基隆市政府",
-    "summary": "全台首座身障創新基地在基隆誕生，謝國樑市長表示將打造城市共融新地標。此基地旨在提供身障人士更多發展機會，促進社會平權與融合。"
+    "title": "基隆戰鬥陀螺賽事掀起跨世代熱潮謝國樑邀大小朋友挑戰| 2026九合一選舉",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KbkJLQnJCYkdTakdZOGpOWTMycDFsSFU3Vi11aVJpNm5CZHU5M3VYM091NEt2aU93a215VC1hZkVfZ1lYYk5VMFo2T2toRUo1Qy1wZ2RB?oc=5",
+    "source": "UDN",
+    "summary": ""
    },
    {
-    "title": "基隆中和路增設停車位",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBoeHdlYXgyQjgwdnQ4RkUwLVpENUdNN2wzYk9HZC1tTVgxUHdhUHBRQ0twT21xNWdxaXhfRTB1dVJVbmFHalVzVDRjSmJyX01TOWJSQWdMS1BjLW9hcUE?oc=5",
-    "source": "基隆市政府",
-    "summary": "基隆市中和路200巷停車場下週起將新增45格汽車位及25格機車位，這是謝國樑市長三年內佈建12處公有停車場的成果之一。此舉有助緩解停車問題。"
-   },
-   {
-    "title": "基隆議員涉賄133萬遭起訴",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ULU9PV1ZheUdQTzNHT3U1bkNUU2ZiUjZ3am9yQ2lhV29QRlRQWFFXQnZpSkptWTZ3TE84WnhReGt4Nkd0NWtvUXAzLXZlN2ZvYVUxX0pRdW9SZXd1RHdWMjdXSlB1d3FUZ3fSAW9BVV95cUxNR1JyVXYwZkxnR094SmhCVjJLWkhtZDVlR1NoUXhaTFp3WENual9HMFpoQV9WNlNzSEZQWlZEblhYZU04X3h2NEl6a1NwZG04aFB1LUtjenBqY0otVXh2dU1QUWJISjk1SzJkWl9PVFE?oc=5",
+    "title": "謝國樑拋「台鐵不退場！捷運進安樂」 朱立倫、侯友宜加持",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8yZE9weE80MWQ5VXZIVThRUVoyaUNKTEZGbFJ5UEdCa0lJQnpnaC1Mdnk0V0xlUU1XOUFxZ1RlcHZ2MHRKWC1leUlKUjBCLVEwRVowQjhFWHItbC1RdWpzWUlVY1A2b0RDeWfSAW9BVV95cUxPVTRibVpYUDNJZXY3Z3RjRFpUNUZLT0YzcExod0tfRm9TNFlNOVB4QU4zTDcyY2ZVZGFKZUpZeTBDZWVlblZkMGNyZDNyVS1VeGRjWTBCSTlkdWRLMnlURkhMOHRVWXFyRE1TcTRTMDA?oc=5",
     "source": "自由時報",
-    "summary": "基隆市議員涉嫌收賄133萬元遭起訴，引發外界對市府廉政的質疑。媒體人吳靜怡追問市長謝國樑是否應向市民道歉，此案衝擊市府形象。"
+    "summary": ""
+   },
+   {
+    "title": "謝國樑加速推進基隆捷運 雙橋改建齊發 型塑城市新風貌",
+    "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFAxVzVKMFFsU3dta21DaWlZVmVnejFPX1FBUUdQQWVDMWJETFd1VmM2NEF4bWlfdUhVWVQ1Nm96QTBfQQ?oc=5",
+    "source": "墨新聞-MORE News",
+    "summary": ""
+   },
+   {
+    "title": "謝國樑出席清潔隊員節慶祝活動 感謝環保英雄守護基隆 持續優化福利與勤務環境",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9INHFFa0txMjRkeWI0UTdpWmhXOUxQNXduYVBLYU9LQU43VzBBaW5Ib01GMHoyeUhpci1mY0pzUEpva1hvcHA4b2tCSXRCdDRTamZkOUFiNWxXX1Rlcmc?oc=5",
+    "source": "基隆市政府",
+    "summary": ""
    }
   ]
  }
