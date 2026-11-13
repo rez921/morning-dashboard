@@ -1,102 +1,102 @@
 {
- "date": "2026-11-12",
- "updatedAt": "2026-11-12T10:26:23+08:00",
- "ai": true,
+ "date": "2026-11-13",
+ "updatedAt": "2026-11-13T10:03:50+08:00",
+ "ai": false,
  "news": {
   "intl": [
    {
-    "title": "俄烏重啟和平談判 澤倫斯基見轉機",
-    "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxPNlduT1VUSVVrTTRRRWNEOHlCTmJIcFd4YndtTlRLMklZbHE3Qi1mYUFWZzRkNm1McXZkV29qQ0t4VFZxcDRubGt4bHkxMFltTW43S0JXRGJoR3ExX0I4c0QxTWlKT3lvdjNQaDc0Z19hdVctdDM2SUlLWW52Q1AwMDlkc2oxZ3ZqTDVQRjltXzVqUTFER2MxQjNCV1RnV2dSSVpRTENuSjhYSkJqS2NBTnlobTZ6dTZYX3ZTWXJTcWVTNjY5TG56VTRzNFVvZFlWc0d3NUFrVlkzSVFFNk9UVnN6OHJGcl94YmZROWl1VFVBZUQ0UGEtRHRrUnJpU3VrR1lwUlFDMnd1Q0hBMExYdE90Y2NjbmhQLVd1Vi1CWWd2b0dwQ2VGMjBkNTlsY1lNRzlQUW5wdUFNQTBKRUFtc1lZODA1VlpfZEVIazRhSE5PUDJUVUJDeFhqczZtcTE5bTNSNHFfWXdvNFNKcW5kS21YS1JyTlJBQWNzbDZibkttZkZvbWFWOU5Fcnc1eFMz?oc=5",
-    "source": "Yahoo新聞",
-    "summary": "俄烏戰爭在睽違九個月後重啟和平談判，烏克蘭總統澤倫斯基表示看到局勢變化。此舉為長期衝突帶來一線曙光，國際社會高度關注後續發展。"
+    "title": "美司法部傳分案追查美超微走私疑雲、輝達反壟斷 兩檔股價雙雙重挫",
+    "url": "https://news.google.com/rss/articles/CBMivANBVV95cUxPYXY0cG5VeDBtNF9QZVFMNEhqYmZMM2hVRUtRYV94S3FPbV9nbmdUX1YxNzhUVk1hLVJnaE9ocVFIR29RNENwMkNkNW4wcGVhcjQ0Q2xqVW5lNG10NWtYTzZjaWxXdG81Q3ZpNWd6RjlSVTZCNnRZeEdidzVzMk91MDM1TjN4R1pTazNOWTd5TTVtR2VnTVVmQlYzTXBiQXlPbkxsaEc3NDVDTjBNQjB4UEx2eENTYXVkcmpEVDl3MG5PR2Uwc1FhcElobGE3enNQbHZfUHk2ME1sYXMwV0QxVzRlckV3eXlXTzNteEIwbWNEZEpNLXVUMHpoM3Rkc2NsWDZmUndYY2tCU291RnhpUlJqSG9vZFp5UTcxMnNCT1JCbkNsdFI3Y2t0RnE3WHlzZDc5blJBcDZlbURNdkxZNF9FMEhYQVo1Z0JCeG5DZU02dkNxVmxEaWRjMXFTeV81U3EyenQ1d2VXUWFqQXRPaGxlalQ3YmRPX3Zudk1tLU9xcy1Ma3pwQUI0bnJMS21qNE1XY09pTzZ6YTVYamZZY3hITGRuWEFjcXR4VTZ1aFprV2ZrWWpZY2p6NmU?oc=5",
+    "source": "Yahoo 財經",
+    "summary": ""
    },
    {
-    "title": "輝達盤後暴跌10% 黃仁勳恐遭解職",
-    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE12ODVkT3hPTk9NbXZmRzByczJVcHdVbTEwZGtTbkV1QkxZR3FSMXZkRHhNQjlXanNtNGpnR0hNTTEwdXdXVnk4Um1QTFlhRXc?oc=5",
+    "title": "〈美股盤後〉黃仁勳閃辭後 輝達市值一夕蒸發超1800億美元 四大指數全黑",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rZ2lFd1dHczhGMG15and4OTlzRjdaQVJWU3EyMThpWlgwMXV4R0pNcXdobWJXa3BmTEg5NC1FUDNWa0FpZ0ZQS3JuLXlDUlk?oc=5",
     "source": "鉅亨網",
-    "summary": "輝達股價盤後重挫10%，市場傳出執行長黃仁勳可能因個人因素遭解職。此消息引發日韓晶片股走勢分化，對全球科技產業投下震撼彈。"
+    "summary": ""
    },
    {
-    "title": "G7外長挺台入國際組織 籲勿動台海",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OdHoyVV90VWJNcG9fV3l0dXN6R29KOGtsa1VqT3Zyb1lGdVppS1NEdWVhVW4zbUxhUVYyMlhXY3NLVnh0QVR4Z3RUY0dicEs3UmtDelA0bDI5c2lPM3V3M0ttTXU1OHpGOHfSAW9BVV95cUxPbW5FcmgzeHpmTFRGTGFzMjNZWUZoT3NQUVN3SzY1VTg3aXpLbFhrRVl1dHdsVlBEZXZnSlU0YzZkanFndW9QMExfM3dEVE0tTzVfVGM4WUtmSFExY2ZiMWFCa1prbzdwWS1pWTZZXzA?oc=5",
+    "title": "俄烏同意大規模換俘！川普女婿曝「1分歧」難解：雙方毫無互信",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5CbXI3WEZVU19BLXI2S2JNbFpfSHMzallnN1A2YlUzNnpLbk81NzVERUZ5aWhhd210cUFqdVBCNE9MeU1qV2JXNkJjeU84YjAzV1prM29SU1FWUEliNHpCamlFSVhLZ9IBa0FVX3lxTFBrWGRsdk1MbXd3aXdDZU9vYnlUcG1NOTVsVGVOSW85UUVNV2VTd01LelVYc29iQW5fUnduUFRKU1FtMm1OT3JmVE1CeC1DcDBqVmd4aVM2YkIzUHpsd1hIbzZxYXUtU1Foc2o0?oc=5",
     "source": "自由時報",
-    "summary": "G7外長會議在巴黎合體，共同呼籲各方勿片面改變台海現狀，並明確表態支持台灣參與國際組織。此舉展現國際社會對台海和平穩定的重視。"
+    "summary": ""
    },
    {
-    "title": "黃之鋒再遭重判 港國安法引關注",
-    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB1VDRMeXpySjctZXZ3Tnczblhicno0Q3ZZUkd1VjFWZzFYeHZLZTVQdzhJc0sxWWh4dFNnN2JYaUl6MlYyX3RfZzMwbzMyZldBY3EyUjMteWdwOU9lSnVLb0RaRGJXd9IBa0FVX3lxTFA3OEd4TmlPRklfV25LYWd1WG5rcnhGV0xDTjNyOC13QThfY1ZIcmtZOExBbS04U29NWHVtZlV2OTNaTzhNLTI5S2pZY0NQWC1qMzRXUFFkZnJnVi1hNURZVEk0N1VhTV9JTkM0?oc=5",
-    "source": "轉角國際udn Global",
-    "summary": "香港民主運動人士黃之鋒因「串謀外國、危害國安」罪名，再次被判處10年有期徒刑。此判決凸顯香港國安法對異議人士的嚴厲打壓，引發國際社會對香港人權狀況的憂慮。"
+    "title": "伊朗稱打下美軍MQ-1！美國防部前高官：動武非華府首選- 國際",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ueDZEMVpES1Zpdm9HeHF1V21VTEJhdVZFSHZWZ3RnZk5vZ0w4SXJlWEdFdTl1X1NZSXBuYTZsX2xCbXI1OEhLTWZyV1lWZUFyZDB1cm9Nb1BxY3h2Z3BrbklxUTF1YWpYaTNIbHln?oc=5",
+    "source": "中時新聞網",
+    "summary": ""
    },
    {
-    "title": "巴拉圭總統因數位銀行倒閉辭職",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFByLTI5M0VhSEtLM2x4bHJ2U2dUNy1qSGlmZ1M3Zm5LbVp4c1VscFM2Y18zUnI3bm5MMUZhQUtiSkJ1aFNvY2ZIdF9TLUNTa0ZM0gFWQVVfeXFMUHpDbkx0NFpzSkRySjd4NjA1YWZLZGhIWk0yS2djdE55dG5TQmFJWGt2am1UZTFWS0plemFoUllzdDNxbUhWVEQ2REE2cmwyMnpjLVFOSFE?oc=5",
-    "source": "udn",
-    "summary": "台灣友邦巴拉圭因本土數位銀行倒閉引發政治與金融危機，總統宣布辭職。此事件恐影響該國政局穩定，並對台灣與巴拉圭的邦誼帶來潛在挑戰。"
+    "title": "赫塞斯彈劾案眾院遭封殺！民主黨不罷手 川普發文力挺",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rM29YbDRxQ0cyZFRIM1U1VUZFSzRhX0lUQkJQcS1XZzU0MmhNR3A2MlBXSVV3MEtoMWRtbktLelVJUlFHZ2FKSlpYMjZ1b1E10gFWQVVfeXFMTy1zbEdDa3ZBbmd2MFhVM2RndWdaYzZqYUxxYXdUdGJUa3JGWXg4S3A2RGlKcVZXM2RvWE9jTTNTbmMwX0lrYUhjLXZjb013ajhPXzNRdEE?oc=5",
+    "source": "UDN",
+    "summary": ""
    }
   ],
   "tw": [
    {
-    "title": "解放軍「無聲演習」包圍台灣 美智庫示警",
-    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1NRnRMWWlhUGcybHpOMUsySjhlSUFRUjFpV0xlamkzWElFUDB3d2VwdXptRG85UkZmT1EzOGs4ejgzSktJdjhiTXdpODFBdw?oc=5",
-    "source": "風傳媒",
-    "summary": "美國智庫警告，解放軍逾百艘船艦在未公告下出海，進行「無聲演習」包圍台灣。此舉被視為三大戰區罕見聯手，升高台海區域緊張情勢，國安單位密切關注。"
+    "title": "東北季風減弱各地回暖 吳德榮：下周三鋒面+東北季風 冷空氣恐持續3天",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5DMXB6ZXI1WEdOVWJraXA3NlpjMVFpMFBNcmVRaWRxdlYteUVQREdhcnZEbWFEUjQ0X0hlTGZXWDdYamtINkFmem5vcFdVWEtl0gFWQVVfeXFMTWxHdmhydlJIckROQ05rZldhRldTYk5pUWFWZnpwVTItZTMzUHlBTXB1dEEyMmpTZnAtaDBvaDI2am9vT1ZKRndCZWp0RWZZZUdxLWE2aVE?oc=5",
+    "source": "UDN",
+    "summary": ""
    },
    {
-    "title": "老人福利法爭議 賴清德批藍白增負擔",
-    "url": "https://news.google.com/rss/articles/CBMikwNBVV95cUxQRFNMQ045ZGRRTEFoNkZlWlVTT3hJbW1aR2VYZmxlRUZaTlJWcEc1bGEtWlZZaXNZcnNrelBnZmR1QThEM1VJaVJrdThSdEs0eFhGUFFhb2QwQldtcURQNDZfSnkxMklzcXMyYzNQTTVGUzFrdng3WWF1X3Q1SExqekk1V0VzXzV0UmlxR05nd0MwSVpFV2hfV2pGVHVhZXVKUUR0WmVINkVLd1dSMHFkWkJlSlU3S3BsXzh0Z1o4bnVHV3hFaTRadE1yQ0M0OEZkYW1XU0trY09BRWZhWURuWE5IMXA5ZzBrbkdnYUVnd00xZDZxODgzdzc1WmoxVUlwWnY1NlFJYWRwZXNoOE4wVmpjX3BOa1Z5ci0zazk1T2RPU1ZMNHQyc1lzVTd4LXlaa0lRc2VkZmhnMXpUTTBZaFNlT0VnWjNlTDh3NzFPSHE4enluQUMxQVY1TmhsRHN2OHJTc0hMRmZFRWYzalg5S0JtSEllU2JsR19EbG9UYjBabnowd3o4dXpJYkdfM19MT1dR?oc=5",
+    "title": "錄音檔曝光！莊瑞雄掃街脫口「張善政選到一半中風」 他急道歉滅火：發言不周自己承擔",
+    "url": "https://news.google.com/rss/articles/CBMikANBVV95cUxPbndpMEZwWXdKWTB3RlkzbGk2dS1BRFpoMFE0X2NFeHZvTkxma2U0QkNqek5BSWZhRFZfcDZnTEY1UGYxY0M5RE82aEF4VjB0TWN6OTNmbFh0ZlpJeHlaRFJ5MUJ0a0NGRVZ4X2VMaVJYNWx6enNLWXNUOGpGRGNPQm1WTUV0LVcwYjFzOTJVX3hQX2YxTzZnSk1DTkJWNENfT2pHcjdJTVFnLWE1dXUwcW5NTFdVeFM3RTNzUnlidXhwa0hSbjlxMno5THhGVEpJWFg1MlJWRVpyMkZSM3lMaDFycktCV0RlVnY4dmFHc2M3VzhrSHN6eHJScC13QUY2NTAxbnY0akVMR2NJblprcHhHZ1B6Y3YzV0xCQVZZQ1VISXZLd2JhbnZfZkJBV05SaFNfRGZGbmxHVDJxU29XWWdudl9QX1lZaGVlZVBDYjVyMk1kdXFzdS05WEpFVmEtUGRNRXBtcE93SkpkS045eDdlQ1BxSnhJWjd1WFd0a0NLLUdnX2hXYWhrcXVOWWFO?oc=5",
     "source": "Yahoo新聞",
-    "summary": "行政院長卓榮泰未副署《老人福利法》，總統賴清德批評藍白陣營提案將年增400億元預算，恐由年輕世代承擔。此案引發朝野對財政紀律與世代正義的激烈辯論。"
+    "summary": ""
    },
    {
-    "title": "陸客入境疑簽「台獨聲明」爭議擴大",
-    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBveUVfY2U5aGhOUndHTzlwY3JzQXMwNmVkV2lRamZDTTRyS0NMb19RYXpWWWViMGs4ZENhTzd5SXl3NGRMTXJpNTVWeHNrZw?oc=5",
-    "source": "風傳媒",
-    "summary": "移民署遭爆料要求陸客簽署「台獨聲明」才放行入境，引發在野黨質疑政府民主與獨裁。此爭議擴大兩岸交流的敏感性，政府需釐清相關規範。"
-   },
-   {
-    "title": "施振榮代表出席APEC 總統府籲平等參與",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBrX3BBRlRlVV9uanE0LUpUWExOSXY1aGRZXzlZWmJqSG9LOXhoYU1hZ3hJemdaLU9JTmw3UlBSbFFyNmJkNl9hakg3dVhTWGJiSHBqcHhiZXR4cEVid05B?oc=5",
-    "source": "中央社 CNA",
-    "summary": "總統府宣布由施振榮代表台灣出席APEC峰會，並呼籲中方確保台灣能平等參與。此為台灣在國際場域爭取能見度的重要機會，也考驗兩岸互動。"
-   },
-   {
-    "title": "高金素梅涉收中共資金 遭求刑14年",
-    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1hb2NlNTZweTRkSHoyZk10Wm14TkRzMmJOWlZzX1BZUmNLX1Y1UUZBamJYQXdFbVNEZEMtQVI4SXUzU21SZ3ZGUw?oc=5",
+    "title": "凌濤護航蔣萬安「振聾發聵」！女來賓輪番砲轟　謝震武不知所措表情曝",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9KLUNDZ0dvOGNCWm9pYmZvWmtKbmgtYkQzQjdLeWp2Y29JeGdPWHJ5TDBhN2VRNHVjRUw1dTUzZkJ6aDRfSzhwddIBTEFVX3lxTE5zODNZVDRwZVF4emtWQjZPMnlmblJhR3Q1clUwV19wbE0zNzZqajIyWHdnSnRDY3pWSTRfWWpYcDhkODA2T2ZoeEx6ZWk?oc=5",
     "source": "三立新聞網SETN.com",
-    "summary": "立委高金素梅被控涉嫌收取中共1.7億元資金發展組織，遭檢方求刑14年。此案涉及國家安全與政治獻金，引發社會高度關注，高金素梅已發聲明回應。"
+    "summary": ""
+   },
+   {
+    "title": "「祖國完全統一一定要實現」陸紀念孫中山誕辰 習近平重申：絕不為台獨留空間",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hTm1GRk9NbU1zTWxfemlGUDNtN2l6Q1ZEWHdySjM3Qi1ZaTJmbzhQaWhwVEZka2E3M0lwazBrWDRoTl8xVW5QcUZTUDdoM1EzR1I4cVRGRy0wbVdrVEI5dDJPMDhXeGp6aXVfdV9B?oc=5",
+    "source": "中時新聞網",
+    "summary": ""
+   },
+   {
+    "title": "最後決戰／戒慎恐懼！綠營認沒看過雙北這狀況　另有2地重點衝刺",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0xNGNOeTV5SEd1WlJLcXFHQzRUVTM1Tkc2VGI5bG9sLXpOQVB6N3AzemVrcmlRTnBjVlZDbUlPZnVZblBGbEdjYmstX3hfMFRYOFVjc0cxUnN2YUg3M1HSAUtBVV95cUxQTFBJeHlpOGYxQVZUWHg5clM1UTdVM240UW5INDg5eEN4VmhacFNNYjdHQXpvZi1UdXNlOFR4TzRlTWE3RzJHYVR2VkE?oc=5",
+    "source": "ETtoday新聞雲",
+    "summary": ""
    }
   ],
   "kl": [
    {
-    "title": "基隆邀台肥轉型棕地 引進AI數據中心",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9YdTRlOFpmSFprcFNKbzhGcXh6ODRtSDBvVFhrODhXTmN1UWg3Tk9fa3dsWERsZTRJZXFJMjQ3TkZmWDRpdDhFdmN2ekpETFJRS2dkNXA2VFdjZFJQV0E?oc=5",
-    "source": "基隆市政府",
-    "summary": "基隆市政府積極推動14公頃棕地轉型計畫，力邀台肥合作引進AI資料數據中心。此舉有望帶動基隆產業升級與經濟發展，創造更多就業機會。"
-   },
-   {
-    "title": "基隆道安考評獲全國3殊榮 謝國樑推行人友善",
-    "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE95R0tWaTAzUVkyNm1CY2FQQWhaX1BBVlpacXVLSUtDTm9fZER0R3hLOEhJbVhUY3RITUhNYTk5ei16QQ?oc=5",
-    "source": "墨新聞-MORE News",
-    "summary": "基隆市在道安考評中勇奪全國3項殊榮，市長謝國樑推動行人友善政策成效顯著，並在精進獎項中摘冠。這顯示市府在公共安全方面的努力獲得肯定。"
-   },
-   {
-    "title": "基隆市立田徑場啟用 謝國樑邀韓國瑜見證",
+    "title": "基隆市立田徑場蛻變重磅啟用 謝國樑邀韓國瑜共同見證基隆重大運動建設新里程碑",
     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE95b3VEbkVHaGJRQnc5X1hFU3phemU1UXRZQ3VIVE1qdFE1QlFiYlQ2cXVhZF9EYWt6NndSWE1CVG5OLW5qWlU4MW9PVmw1UnBtdnlLcE4yUU5KVGFpUWFRVDd3TGdQQQ?oc=5",
     "source": "基隆市政府",
-    "summary": "基隆市立田徑場蛻變後重磅啟用，市長謝國樑邀請韓國瑜共同見證這項重大運動建設。此設施將提升基隆的運動環境，嘉惠市民。"
+    "summary": ""
    },
    {
-    "title": "基捷二階爭議 童子瑋批謝國樑搞錯拆遷數",
-    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QODZtQlNCbmhheTRvT0tVZmJxYk1YalBGeWVEdDQ2ellXNWljWTUtSXM1TXdEcWNuQW5oQnJzTlhRUDk4VHVGZ1Nyd1BpcDRSUzRmZExvMGZaWmh3Q08xZtIBZkFVX3lxTE1fWjNReXZVZXlCeDNOYktYdVI3UEdkclU5bjNRcGtsU0h0cU1ONEJ2ME04cVM1SDlmRVlaMXpMQUpGT01DdW9jclZoU1dtVFBWTjlxRDdvcDcwQVNNdVJmUWVYQ1hoZw?oc=5",
+    "title": "蔣萬安請假首日 謝國樑陪掃街",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5zbjNfR3BQZUI0eXlHbmpCM0ROU3hYbDVnZlZxWlZjLXVIWU50akxxU3ljOWV3a2o1blFGcXFLNDdiODBRVlpTNzcxdUl0NXpZTEpZQkxyaW9YUmVvVkJfVtIBZkFVX3lxTE03RnFacW5GM0lLZnZTdVZrVTlQMGlsRHYtTEV2NDhqaXpGVDIxZ3JGLXY1c1hrRVlGWC1wZjRPYjlPYmkyTU9ac1BES0VZRGNpcG1PeW9fYzJUd1RkU25KcTYxcnUxZw?oc=5",
     "source": "自由時報",
-    "summary": "基隆捷運二階工程引發爭議，市議員童子瑋批評市長謝國樑連拆遷戶數都搞錯。此議題關乎基隆重大交通建設與居民權益，市府需釐清說明。"
+    "summary": ""
    },
    {
-    "title": "謝國樑主持新住民委員會 強化政策推廣",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9MLVdtbG05SjNTeURua2ZxX0ZuTGtMTTNUcThYMkVRNDAzVElVaE1fQ0RMaGtZNEI1QlVRU2RFaENEUWJ2eWZ5ZTRnNXZjdy1tM3lha09GQ0s1cm1MaDI5M1ZaNA?oc=5",
-    "source": "基隆市政府",
-    "summary": "市長謝國樑主持新住民事務委員會，感謝新住民豐富基隆多元文化，並承諾強化相關政策推廣。此舉展現市府對新住民權益的重視與支持。"
+    "title": "謝國樑辯論大當機6秒！律師吐槽「超越他了」：比問A答B還尷尬",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBYVkxmdXItdzdPV2xHdUtGa1dxQjFveGNqV1Vwc3BQVE56OXZCRHF2OUh6MVJXbEdDY1J5NDJUSGtMeHJwTFg0bVRYVTDSAVJBVV95cUxPQVZkQzZhcmFscW1KbnpiOTdET1RxWkw4bVdQQjEyYkhIcUh6VU13YTQ3dWhZbkdKYnQ2RkJySkE0ZVJhMnI1Yzl2c1JqSGw0UUN3?oc=5",
+    "source": "NOWnews今日新聞",
+    "summary": ""
+   },
+   {
+    "title": "基隆全面更新電動公車卡關 童子瑋指謝國樑跳票： 我當市長一定完成",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBTZG1XQkR3em1aQzR0U2Fiek1ycFJMZ0gzV2theThJR1phYmFCbDhSMlB5amlaTUdSd1ROaDBScmtMMzBtdTA3eHp6U1ZtNEpqRlRZ0gFYQVVfeXFMUGtObUpjc2REeGhNcUN0U1F0MFkwcGwxOGtBRWNIMTFlTE5uVUtvZ3pTMjV4bTcxRlo4S20wTG9HTTd1RDFLTVg5dEFuRmpocFhPV2xZYTZQbw?oc=5",
+    "source": "UDN",
+    "summary": ""
+   },
+   {
+    "title": "才怒嗆謝國樑人身攻擊　謝立功喊「洋流交會，童心前行」表態挺童子瑋",
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9UZXlzRkpQTFRqT1B4Wlg2STBHVEtjNWFWbzdPRUhzZ3dFajl4MGVhLTVHUnY3eTluTW9iSUR0akdnX2RqZ1h4X9IBTEFVX3lxTE9NUFlKb1R2Y0Fsdm9jN1NjTVZDRmg1RGJyc0ZpejB1ZkxidHBINWwwZFJUdTZfYkdsX1BubVYyeTNwSDI1QmZFamFBbFQ?oc=5",
+    "source": "三立新聞網SETN.com",
+    "summary": ""
    }
   ]
  }
